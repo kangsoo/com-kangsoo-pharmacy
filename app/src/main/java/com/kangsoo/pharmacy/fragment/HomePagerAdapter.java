@@ -65,14 +65,17 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
 //                fragment = new UserReceivedNewsFragment();
                 fragment = new CameraFragment();
                 break;
-            case 1:
+//            case 1:
 //                fragment = new RepositoryListFragment();
-                break;
-            case 2:
+//                break;
+//            case 2:
 //                fragment = defaultUser ? new MyFollowersFragment() : new MembersFragment();
-                break;
-            case 3:
+//                break;
+//            case 3:
 //                fragment = new MyFollowingFragment();
+//                break;
+            default:
+                fragment = new CameraFragment();
                 break;
         }
 

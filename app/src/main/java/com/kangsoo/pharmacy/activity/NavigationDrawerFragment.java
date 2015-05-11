@@ -26,8 +26,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.kangsoo.pharmacy.R;
-import com.kangsoo.pharmacy.util.AvatarLoader;
-
 import com.kangsoo.pharmacy.model.User;
 
 public class NavigationDrawerFragment extends Fragment implements AdapterView.OnItemClickListener {
@@ -98,8 +96,8 @@ public class NavigationDrawerFragment extends Fragment implements AdapterView.On
         return mDrawerLayout != null && mDrawerLayout.isDrawerOpen(mFragmentContainerView);
     }
 
-    public void setUp(int fragmentId, DrawerLayout drawerLayout, NavigationDrawerAdapter adapter, AvatarLoader avatar,
-        User user) {
+    public void setUp(int fragmentId, DrawerLayout drawerLayout, NavigationDrawerAdapter adapter, User user) {
+
         mFragmentContainerView = getActivity().findViewById(fragmentId);
         mDrawerLayout = drawerLayout;
         //mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);

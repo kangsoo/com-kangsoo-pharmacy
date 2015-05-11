@@ -1,7 +1,6 @@
 package com.kangsoo.pharmacy.activity;
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,8 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.kangsoo.pharmacy.R;
-import com.kangsoo.pharmacy.util.AvatarLoader;
-
 import com.kangsoo.pharmacy.model.User;
 
 import java.util.ArrayList;
@@ -25,30 +22,32 @@ import static com.kangsoo.pharmacy.activity.NavigationDrawerObject.TYPE_SUBHEADE
 public class NavigationDrawerAdapter extends BaseAdapter {
 
     private final Context context;
-    private final AvatarLoader avatars;
     private final LayoutInflater inflater;
-    private List<User> orgs = new ArrayList<>();
+    private User org = null;
     private List<NavigationDrawerObject> data;
 
-    public NavigationDrawerAdapter(Context context, List<User> orgs, final AvatarLoader avatars) {
-        this.orgs.addAll(orgs);
+    public NavigationDrawerAdapter(Context context, User org) {
+        this.org = org;
         this.context = context;
         this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        this.avatars = avatars;
         createData();
     }
 
     private void createData() {
-        orgs.remove(0);
+
+        //orgs.remove(0);
+
         String[] names = new String[]{
                 context.getString(R.string.home),
                 context.getString(R.string.order),
                 context.getString(R.string.account),
                 context.getString(R.string.bookmarks)
         };
+
         String[] icons = context.getResources().getStringArray(R.array.navigation_drawer_icon_list);
+
         data = new ArrayList<>();
-        int amount = names.length + orgs.size() + 2;
+        int amount = names.length + 1 + 2;
         for (int i = 0; i < amount; i++) {
             if (i < names.length)
                 data.add(new NavigationDrawerObject(names[i], icons[i], TYPE_ITEM_MENU));
@@ -57,13 +56,12 @@ public class NavigationDrawerAdapter extends BaseAdapter {
             else if (i == names.length + 1)
                 data.add(new NavigationDrawerObject("Organizations", TYPE_SUBHEADER));
             else
-                data.add(new NavigationDrawerObject(orgs.get(i - names.length - 2).getName(), TYPE_ITEM_ORG, orgs.get(i - names.length - 2)));
+                data.add(new NavigationDrawerObject(org.getName(), TYPE_ITEM_ORG, org));
         }
     }
 
-    public void setOrgs(List<User> orgs) {
-        this.orgs.addAll(orgs);
-        this.orgs.remove(0);
+    public void setOrgs(User org) {
+        this.org = org;
         notifyDataSetChanged();
     }
 
@@ -74,7 +72,7 @@ public class NavigationDrawerAdapter extends BaseAdapter {
 
     @Override
     public NavigationDrawerObject getItem(int position) {
-        return data.get(position - 1);
+        return data.get(position);
     }
 
     @Override
@@ -120,13 +118,12 @@ public class NavigationDrawerAdapter extends BaseAdapter {
 
         switch (obj.getType()) {
             case TYPE_ITEM_MENU:
-                Typeface font = Typeface.createFromAsset(context.getAssets(), "octicons.ttf");
-                viewHolder.iconString.setTypeface(font);
+//                Typeface font = Typeface.createFromAsset(context.getAssets(), "octicons.ttf");
+//                viewHolder.iconString.setTypeface(font);
                 viewHolder.iconString.setText(obj.getIconString());
                 viewHolder.name.setText(obj.getTitle());
                 break;
             case TYPE_ITEM_ORG:
-                avatars.bind(viewHolder.iconDrawable, obj.getUser());
                 viewHolder.name.setText(obj.getTitle());
                 break;
             case TYPE_SUBHEADER:

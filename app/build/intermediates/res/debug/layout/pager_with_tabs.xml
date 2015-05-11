@@ -28,14 +28,14 @@
         android:background="?attr/colorPrimary"
         android:id="@+id/toolbar" />
 
-    <com.github.mobile.ui.SlidingTabLayout
+    <com.kangsoo.pharmacy.fragment.SlidingTabLayout
         android:layout_below="@id/toolbar"
         android:id="@+id/sliding_tabs_layout"
         android:background="@color/primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.github.mobile.ui.ViewPager
+    <com.kangsoo.pharmacy.fragment.ViewPager
         android:id="@+id/vp_pages"
         android:layout_below="@id/sliding_tabs_layout"
         android:layout_width="match_parent"
@@ -53,4 +53,4 @@
         android:layout_centerInParent="true"
         android:visibility="gone" />
 
-</RelativeLayout><!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/layout/pager_with_tabs.xml -->
+</RelativeLayout><!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/layout/pager_with_tabs.xml -->

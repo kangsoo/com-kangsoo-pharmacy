@@ -15,20 +15,10 @@
  */
 package com.kangsoo.pharmacy.fragment;
 
-import android.accounts.Account;
 import android.app.Activity;
-import android.util.Log;
 
-import com.kangsoo.pharmacy.util.SettingsUtil;
 import com.google.inject.Inject;
-
 import com.kangsoo.pharmacy.model.User;
-import com.liferay.mobile.android.auth.SignIn;
-import com.liferay.mobile.android.service.Session;
-import com.liferay.mobile.android.task.callback.typed.JSONObjectAsyncTaskCallback;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,11 +30,11 @@ public class OrganizationLoader extends AuthenticatedUserLoader<List<User>> {
 
     private static final String TAG = "OrganizationLoader";
     private User org;
+    private List<User> data;
 
     @Inject
     public OrganizationLoader(Activity activity) {
         super(activity);
-        SettingsUtil.init(activity);
     }
 
     @Override
@@ -53,36 +43,18 @@ public class OrganizationLoader extends AuthenticatedUserLoader<List<User>> {
     }
 
     @Override
-    public List<User> load(final Account account) {
+    protected List<User> onLoadInBackground() {
 
-        try {
-            Session session = SettingsUtil.getSession();
-
-            SignIn.signIn(session, new JSONObjectAsyncTaskCallback() {
-
-                @Override
-                public void onSuccess(JSONObject userJSONObject) {
-                    try {
-                        org = new User(userJSONObject);
-                    } catch (JSONException e) {
-                        onFailure(e);
-                    }
-                }
-
-                @Override
-                public void onFailure(Exception e) {
-                }
-
-            });
-        } catch (Exception e) {
-            Log.e(TAG, "Exception loading organizations", e);
-            return null;
-        }
-
-        List<User> data;
         data = new ArrayList<>();
         data.add(org);
+        return data;
+    }
 
+    @Override
+    public List<User> load(final User org) {
+
+        data = new ArrayList<>();
+        data.add(org);
         return data;
     }
 }

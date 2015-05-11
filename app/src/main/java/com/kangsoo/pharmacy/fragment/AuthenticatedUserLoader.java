@@ -15,19 +15,19 @@
  */
 package com.kangsoo.pharmacy.fragment;
 
-import android.accounts.Account;
 import android.app.Activity;
 import android.content.Context;
 
-import wishlist.AsyncLoader;
 import com.google.inject.Inject;
+import com.kangsoo.pharmacy.model.User;
 
 import roboguice.RoboGuice;
 import roboguice.inject.ContextScope;
+import wishlist.AsyncLoader;
 
 /**
  * Base loader class that ensures an authenticated account exists before
- * {@link #load(Account)} is called
+ * {@link #load(User)} is called
  *
  * @param <D>
  */
@@ -93,8 +93,7 @@ public abstract class AuthenticatedUserLoader<D> extends AsyncLoader<D> {
     /**
      * Load data
      *
-     * @param account
      * @return data
      */
-    public abstract D load(Account account);
+    public abstract D load(User org);
 }
