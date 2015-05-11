@@ -40,17 +40,10 @@ public class OrganizationLoader extends AuthenticatedUserLoader<User> {
     private static final String TAG = "OrganizationLoader";
     private User org;
 
-    /**
-     * Create organization loader
-     *
-     * @param activity
-     * @param accountDataManager
-     * @param userComparatorProvider
-     */
     @Inject
     public OrganizationLoader(Activity activity) {
         super(activity);
-        SettingsUtil.init(this);
+        SettingsUtil.init(activity);
     }
 
     @Override

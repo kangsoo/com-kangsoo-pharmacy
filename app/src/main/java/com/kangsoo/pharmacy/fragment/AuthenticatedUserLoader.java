@@ -16,15 +16,11 @@
 package com.kangsoo.pharmacy.fragment;
 
 import android.accounts.Account;
-import android.accounts.AccountManager;
-import android.accounts.AccountsException;
 import android.app.Activity;
 import android.content.Context;
 
 import wishlist.AsyncLoader;
 import com.google.inject.Inject;
-
-import java.io.IOException;
 
 import roboguice.RoboGuice;
 import roboguice.inject.ContextScope;
@@ -39,9 +35,6 @@ public abstract class AuthenticatedUserLoader<D> extends AsyncLoader<D> {
 
     @Inject
     private ContextScope contextScope;
-
-    @Inject
-    private AccountScope accountScope;
 
     /**
      * Activity using this loader
@@ -70,6 +63,7 @@ public abstract class AuthenticatedUserLoader<D> extends AsyncLoader<D> {
     @Override
     public final D loadInBackground() {
 
+/*
         final AccountManager manager = AccountManager.get(activity);
         final Account account;
         try {
@@ -91,6 +85,9 @@ public abstract class AuthenticatedUserLoader<D> extends AsyncLoader<D> {
         } finally {
             accountScope.exit();
         }
+*/
+
+        return null;
     }
 
     /**
