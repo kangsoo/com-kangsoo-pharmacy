@@ -104,7 +104,7 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
             reloadOrgs();
         }
 
-        reloadOrgs();
+//        reloadOrgs();
 
     }
 
