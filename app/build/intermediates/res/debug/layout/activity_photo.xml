@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/top_bar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/top_bar_icon_margin_top"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/plus" />
+
+    <!--android:layout_marginLeft="@dimen/top_bar_icon_margin_left"-->
+
+
+</merge><!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/layout/activity_photo.xml -->

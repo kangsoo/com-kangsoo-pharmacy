@@ -1,0 +1,20 @@
+
+<resources>
+    <color name="camera_preview_background">#000000</color>
+    <color name="top_bar_background">#FBD22A</color>
+    <color name="actionbar_background">#33AA49</color>
+    <color name="top_bar_background_center">#FFD12B</color>
+
+    <color name="primary">#3D3D3D</color>
+    <color name="primary_dark">#313131</color>
+    <color name="accent">#3797C7</color>
+
+    <color name="background">#F9F9F9</color>
+    <color name="background_selected">#E8E8E8</color>
+
+    <color name="tab_selected_icon">#08D7FF</color>
+    <color name="tab_selected_text">#FFFFFF</color>
+    <color name="tab_icon">#FAFAFA</color>
+    <color name="tab_text">#999999</color>
+
+</resources>

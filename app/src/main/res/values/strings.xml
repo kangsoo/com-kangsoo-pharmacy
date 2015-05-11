@@ -1,0 +1,44 @@
+<resources>
+
+    <string name="app_name">김강수 사진촬영</string>
+    <string name="action_share">공유</string>
+    <string name="toast_error_camera_preview">Can\'t initialize camera preview.</string>
+    <string name="toast_error_save_picture">Can\'t save picture on external storage.</string>
+    <string name="content_description_take_picture">Take picture</string>
+    <string name="settings">설정</string>
+
+    <string name="birthday">Birthday</string>
+    <string name="credentials">Credentials</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="phones">Phones</string>
+    <string name="server">Server</string>
+    <string name="usingwifi">Wi-Fi</string>
+    <string name="album_name">CameraSample</string>
+    <string name="sendPhoto">전송</string>
+    <item name="top_bar_icon_animation_scale" type="dimen" format="float">1.06</item>
+    <dimen name="top_bar_icon_margin_left">20dp</dimen>
+    <dimen name="top_bar_icon_margin_top">20dp</dimen>
+    <dimen name="plus_button_elevation">2.3dp</dimen>
+
+    <!-- Navigation drawer strings -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_subheader">Subheader</string>
+
+
+    <string name="home">Home</string>
+    <string name="order">처방</string>
+    <string name="account">계정정보</string>
+    <string name="bookmarks">즐겨찾기</string>
+    <string name="find_repositories">Find Repositories</string>
+
+    <string name="tab_takepicture">촬영</string>
+    <string name="tab_passHistory">이력조회</string>
+    <string name="tab_drugInfo">복약지도</string>
+    <string name="tab_orderHistory">처방내역</string>
+
+
+</resources>

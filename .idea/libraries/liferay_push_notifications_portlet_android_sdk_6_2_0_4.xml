@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="liferay-push-notifications-portlet-android-sdk-6.2.0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay.mobile/liferay-push-notifications-portlet-android-sdk/6.2.0.4/b66af76c05883ad0c2e04a35fcbc35cc4be10a88/liferay-push-notifications-portlet-android-sdk-6.2.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay.mobile/liferay-push-notifications-portlet-android-sdk/6.2.0.4/bf0a53505456020b5c6ced05df1e68407ca35b0a/liferay-push-notifications-portlet-android-sdk-6.2.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

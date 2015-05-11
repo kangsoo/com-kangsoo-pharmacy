@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <PreferenceCategory android:title="@string/credentials">
+
+        <EditTextPreference
+            android:dialogTitle="@string/login"
+            android:inputType="textEmailAddress"
+            android:key="login"
+            android:title="@string/login" />
+
+        <EditTextPreference
+            android:dialogTitle="@string/password"
+            android:key="password"
+            android:password="true"
+            android:title="@string/password" />
+
+        <EditTextPreference
+            android:dialogTitle="@string/server"
+            android:inputType="textUri"
+            android:key="server"
+            android:title="@string/server" />
+
+        <EditTextPreference
+            android:dialogTitle="@string/usingwifi"
+            android:inputType="text"
+            android:key="usingwifi"
+            android:title="@string/usingwifi" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="liferay-android-sdk-6.2.0.14">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay.mobile/liferay-android-sdk/6.2.0.14/fbe1eef498ded111e22021e7f395c23b3ae0b289/liferay-android-sdk-6.2.0.14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay.mobile/liferay-android-sdk/6.2.0.14/217a6c2640cb0cd087b99c0612ec35b53aab6142/liferay-android-sdk-6.2.0.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
