@@ -5,4 +5,4 @@
     <item android:state_focused="true" android:drawable="@color/background_tab_pressed"/>
     <item android:drawable="@android:color/transparent"/>
 
-</selector><!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/pagerslidingtabstrip-library/res/drawable/background_tab.xml -->
+</selector><!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/pagerslidingtabstrip-library/res/drawable/background_tab.xml -->

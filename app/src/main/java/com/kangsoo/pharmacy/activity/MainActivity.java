@@ -18,6 +18,7 @@ import android.view.Window;
 import com.google.inject.Inject;
 import com.kangsoo.pharmacy.R;
 import com.kangsoo.pharmacy.fragment.HomePagerFragment;
+import com.kangsoo.pharmacy.fragment.OrganizationLoader;
 import com.kangsoo.pharmacy.model.User;
 import com.kangsoo.pharmacy.task.UsersAsyncTask;
 import com.kangsoo.pharmacy.util.AvatarLoader;
@@ -39,7 +40,7 @@ import static com.kangsoo.pharmacy.activity.NavigationDrawerObject.TYPE_SEPERATO
  * Created by bsnc on 2015-05-10.
  */
 public class MainActivity extends BaseActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks,
-        LoaderManager.LoaderCallbacks<List<User>> {
+        LoaderManager.LoaderCallbacks<User> {
 
     private static final String TAG = "MainActivity";
 
@@ -60,8 +61,6 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
 
         setContentView(R.layout.activity_main);
         setSupportActionBar((android.support.v7.widget.Toolbar) findViewById(R.id.toolbar));
-
-        SettingsUtil.init(this);
 
         getSupportLoaderManager().initLoader(0, null, this);
 
@@ -93,7 +92,6 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
 
         UsersAsyncTask task = new UsersAsyncTask(MainActivity.this);
         task.execute();
-        signIn();
 
         // Restart loader if default account doesn't match currently loaded
         // account
@@ -107,30 +105,6 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
         //kskim to-do reuse
 //        reloadOrgs();
 
-    }
-
-    private void signIn() {
-
-        Session session = SettingsUtil.getSession();
-
-        SignIn.signIn(session, new JSONObjectAsyncTaskCallback() {
-
-            @Override
-            public void onSuccess(JSONObject userJSONObject) {
-                try {
-                    org = new User(userJSONObject);
-                    ToastUtil.show(MainActivity.this, "User name: " + org.getName());
-                } catch (JSONException e) {
-                    onFailure(e);
-                }
-            }
-
-            @Override
-            public void onFailure(Exception e) {
-                ToastUtil.show(MainActivity.this, "Authentication failed! " + e.getMessage());
-            }
-
-        });
     }
 
     @Override
@@ -174,13 +148,15 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
     }
 
     @Override
-    public Loader<List<User>> onCreateLoader(int i, Bundle bundle) {
+    public Loader<User> onCreateLoader(int i, Bundle bundle) {
 //        return new OrganizationLoader(this, accountDataManager,userComparatorProvider);
-        return null;
+
+        return new OrganizationLoader(this);
     }
 
+
     @Override
-    public void onLoadFinished(Loader<List<User>> loader, List<User> data) {
+    public void onLoadFinished(Loader<User> loader, User data) {
 
         if (orgs.isEmpty())
             return;
@@ -215,7 +191,7 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
     }
 
     @Override
-    public void onLoaderReset(Loader<List<User>> loader) {
+    public void onLoaderReset(Loader<User> loader) {
 
     }
 
