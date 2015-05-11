@@ -104,6 +104,7 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
             reloadOrgs();
         }
 
+        //kskim to-do reuse
 //        reloadOrgs();
 
     }
