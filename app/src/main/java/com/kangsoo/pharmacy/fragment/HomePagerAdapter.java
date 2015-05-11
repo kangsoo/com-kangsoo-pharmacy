@@ -22,6 +22,7 @@ import android.support.v4.app.FragmentManager;
 import android.view.ViewGroup;
 
 import com.kangsoo.pharmacy.R;
+import com.kangsoo.pharmacy.activity.CameraActivity;
 import com.kangsoo.pharmacy.model.User;
 
 import java.util.HashSet;
@@ -63,7 +64,8 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
             case 0:
 //                fragment = defaultUser ? new UserReceivedNewsFragment() : new OrganizationNewsFragment();
 //                fragment = new UserReceivedNewsFragment();
-                fragment = new CameraFragment();
+//                fragment = new CameraFragment();
+                fragment = new CameraActivity();
                 break;
 //            case 1:
 //                fragment = new RepositoryListFragment();
@@ -75,7 +77,8 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
 //                fragment = new MyFollowingFragment();
 //                break;
             default:
-                fragment = new CameraFragment();
+//                fragment = new CameraFragment();
+                fragment = new CameraActivity();
                 break;
         }
 

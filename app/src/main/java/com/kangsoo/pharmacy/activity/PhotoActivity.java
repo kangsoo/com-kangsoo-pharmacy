@@ -8,15 +8,16 @@ import android.content.res.Resources;
 import android.net.Uri;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.v4.app.FragmentActivity;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.CycleInterpolator;
 import android.widget.ImageView;
 import android.widget.ShareActionProvider;
-import android.widget.Toast;
 
 import com.kangsoo.pharmacy.R;
 import com.kangsoo.pharmacy.task.WikiUploadAsyncTask;
@@ -34,7 +35,7 @@ import uk.co.senab.photoview.PhotoViewAttacher;
  *
  * @author Sebastian Kaspari <sebastian@kangsoo.com>
  */
-public class PhotoActivity extends FragmentActivity {
+public class PhotoActivity extends Fragment {
 
     private static final String MIME_TYPE = "image/jpeg";
     private Uri uri;
@@ -44,27 +45,26 @@ public class PhotoActivity extends FragmentActivity {
     private ImageView _topBarIcon;
     private WifiManager wifiManager;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+//        return super.onCreateView(inflater, container, savedInstanceState);
 
-        SettingsUtil.init(this);
+        uri = getActivity().getIntent().getData();
 
-        uri = getIntent().getData();
+        View v = inflater.inflate(R.layout.activity_photo, container, false);
 
-        setContentView(R.layout.activity_photo);
-
-        ImageView photoView = (ImageView) findViewById(R.id.photo);
+        ImageView photoView = (ImageView) getActivity().findViewById(R.id.photo);
         photoView.setImageURI(uri);
 
-        _topBarIcon = (ImageView) findViewById(R.id.top_bar_icon);
+        _topBarIcon = (ImageView) getActivity().findViewById(R.id.top_bar_icon);
         _topBarIcon.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 PhotoActivity.this._animateTopBarIcon();
 
-                Intent intent = new Intent(PhotoActivity.this, CameraActivity.class);
+                Intent intent = new Intent(getActivity(), CameraActivity.class);
                 startActivity(intent);
             }
 
@@ -72,31 +72,15 @@ public class PhotoActivity extends FragmentActivity {
 
         // The MAGIC happens here!
         PhotoViewAttacher mAttacher = new PhotoViewAttacher(photoView);
+
+        return v;
+
     }
 
-    @Override
-    public void onBackPressed() {
 
-        if (exitConfirmation) {
-            super.onBackPressed();
-            return;
-        }
-
-        this.exitConfirmation = true;
-        Toast.makeText(PhotoActivity.this, "'뒤로'버튼을 한번더 누르시면 종료됩니다.", Toast.LENGTH_SHORT).show();
-
-        new Handler().postDelayed(new Runnable() {
-
-            @Override
-            public void run() {
-                exitConfirmation = false;
-            }
-        }, 2000);
-    }
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_photo, menu);
+
+        getActivity().getMenuInflater().inflate(R.menu.activity_photo, menu);
 
 //        initializeShareAction(menu.findItem(R.id.share));
 //        return super.onCreateOptionsMenu(menu);
@@ -109,7 +93,7 @@ public class PhotoActivity extends FragmentActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.settings:
-                Intent intent = new Intent(this, SettingsActivity.class);
+                Intent intent = new Intent(getActivity(), SettingsActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
                 return true;
@@ -130,15 +114,15 @@ public class PhotoActivity extends FragmentActivity {
 
         //wifi를 사용하겠다고 하면...
         if (SettingsUtil.getUsingwifi().toString().equals("false")) {
-            wifiManager = (WifiManager) this.getSystemService(Context.WIFI_SERVICE);
+            wifiManager = (WifiManager) getActivity().getSystemService(Context.WIFI_SERVICE);
             if (wifiManager.isWifiEnabled()) {
                 wifiManager.setWifiEnabled(false);
             }
         }
 
-        WikiUploadAsyncTask task = new WikiUploadAsyncTask(PhotoActivity.this);
+        WikiUploadAsyncTask task = new WikiUploadAsyncTask(getActivity());
         try {
-            fileInputStream = PhotoActivity.this.getContentResolver().openInputStream(uri);
+            fileInputStream = getActivity().getContentResolver().openInputStream(uri);
             task.execute(uri.getPath(), Integer.toString(ToastUtil.getBytes(fileInputStream).length));
 
         } catch (FileNotFoundException e) {
@@ -168,7 +152,7 @@ public class PhotoActivity extends FragmentActivity {
             Resources resources = getResources();
             long duration = resources.getInteger(R.integer.top_bar_icon_animation_duration);
 
-            _topBarIconAnimation = (AnimatorSet) AnimatorInflater.loadAnimator(this, R.animator.top_bar_icon_scale);
+            _topBarIconAnimation = (AnimatorSet) AnimatorInflater.loadAnimator(getActivity(), R.animator.top_bar_icon_scale);
             _topBarIconAnimation.setTarget(_topBarIcon);
             _topBarIconAnimation.setDuration(duration);
             _topBarIconAnimation.setInterpolator(new CycleInterpolator(2));

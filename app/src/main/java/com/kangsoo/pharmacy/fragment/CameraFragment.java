@@ -55,11 +55,13 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback, 
 
         mActivity = activity;
 
+/*
         if (!(activity instanceof CameraFragmentListener)) {
             throw new IllegalArgumentException(
                 "Activity has to implement CameraFragmentListener interface"
             );
         }
+*/
 
         listener = (CameraFragmentListener) activity;
 

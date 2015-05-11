@@ -3,6 +3,7 @@ package com.kangsoo.pharmacy.activity;
 import android.app.SearchManager;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.MenuItemCompat;
@@ -12,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+import android.widget.Toast;
 
 import com.kangsoo.pharmacy.R;
 import com.kangsoo.pharmacy.fragment.HomePagerFragment;
@@ -35,6 +37,7 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
     private List<User> orgs = Collections.emptyList();
     private NavigationDrawerAdapter navigationAdapter;
     private User org;
+    private boolean exitConfirmation = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -149,4 +152,25 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
             });
         }
     }
+
+    @Override
+    public void onBackPressed() {
+
+        if (exitConfirmation) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.exitConfirmation = true;
+        Toast.makeText(MainActivity.this, "'뒤로'버튼을 한번더 누르시면 종료됩니다.", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                exitConfirmation = false;
+            }
+        }, 2000);
+    }
+
 }
