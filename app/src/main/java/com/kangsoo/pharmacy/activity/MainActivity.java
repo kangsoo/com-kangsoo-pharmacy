@@ -40,7 +40,7 @@ import static com.kangsoo.pharmacy.activity.NavigationDrawerObject.TYPE_SEPERATO
  * Created by bsnc on 2015-05-10.
  */
 public class MainActivity extends BaseActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks,
-        LoaderManager.LoaderCallbacks<User> {
+        LoaderManager.LoaderCallbacks<List<User>> {
 
     private static final String TAG = "MainActivity";
 
@@ -148,15 +148,14 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
     }
 
     @Override
-    public Loader<User> onCreateLoader(int i, Bundle bundle) {
+    public Loader<List<User>> onCreateLoader(int i, Bundle bundle) {
 //        return new OrganizationLoader(this, accountDataManager,userComparatorProvider);
-
         return new OrganizationLoader(this);
     }
 
 
     @Override
-    public void onLoadFinished(Loader<User> loader, User data) {
+    public void onLoadFinished(Loader<List<User>> loader, List<User> orgs) {
 
         if (orgs.isEmpty())
             return;
@@ -191,7 +190,7 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
     }
 
     @Override
-    public void onLoaderReset(Loader<User> loader) {
+    public void onLoaderReset(Loader<List<User>> loader) {
 
     }
 

@@ -2,95 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.0\7ff0e000d1e27e356567f56c92af3b8ab912636f\picasso-2.5.0.jar"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.9.0\a681c044244d9fc375198588297a39ba78028423\retrofit-1.9.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="7ff0e000d1e27e356567f56c92af3b8ab912636f">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\picasso-2.5.0-d3251c17aa47f4d93359e6f33e09366b023c9759.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.inject\guice\3.0\28586dc97c525501329d9a242fc3402041e3572d\guice-3.0-no_aop.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="28586dc97c525501329d9a242fc3402041e3572d">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\guice-3.0-no_aop-86670b381b0e6f19595523f9c396461cdca462ff.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-a3bb32a703793e8b3a7a5d419825a571b7beb805.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.3.0\1b355f73402020c5a0dcca58affc3ec3dfeabac1\okio-1.3.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1b355f73402020c5a0dcca58affc3ec3dfeabac1">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\okio-1.3.0-129db21943a48321f3fc3b05f16e4725120d8cc2.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-bbb276ac12fc8801cfb7a5d05876139f81602c82.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com-kangsoo-pharmacy\pagerslidingtabstrip-library\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="7cca9f90e4afe1bce1c407648e462184d0cf3c43">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-d7120309abade1badb0c10477820c52f119fd786.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.liferay.mobile\liferay-android-sdk\6.2.0.14\fbe1eef498ded111e22021e7f395c23b3ae0b289\liferay-android-sdk-6.2.0.14.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="fbe1eef498ded111e22021e7f395c23b3ae0b289">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\liferay-android-sdk-6.2.0.14-39d7fbfdbb6da17b9dfc7a4c86b0895a9376bce8.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-bc065320bdd7de498ce0e3e1dc9710fa80776eb4.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-1e6627d571d04776d90eb5154f898f24112685e1.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-f068b51b60a41f8cd219125c6219a7fe50e2b230.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\asm\asm\3.1\c157def142714c544bdea2e6144645702adf7097\asm-3.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c157def142714c544bdea2e6144645702adf7097">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\asm-3.1-a3f2c0c4c1e4168bb04b7c0e84ed6de29b20c0ee.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="055783146ba9654a725442563be78cad303aad1f">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-1ac830cf728aaaafa12c6d3de4222e9b88368eb4.jar" />
-    </item>
-    <item
-        jar="C:\Dev\android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-7cb00d43ff266d62e5cfc8a98ae096a037b5d715.jar" />
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\retrofit-1.9.0-4507dd2f76e2cdf217ef46be346446d0fe069db6.jar" />
     </item>
     <item
         jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.3.0\2e7bc7033dc2c8423e661224171b3133fb155b28\okhttp-2.3.0.jar"
@@ -100,18 +16,60 @@
         <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\okhttp-2.3.0-b311ab2dea1a1842f2d9b49357bb23d7f35defc8.jar" />
     </item>
     <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.9.0\a681c044244d9fc375198588297a39ba78028423\retrofit-1.9.0.jar"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.roboguice\roboguice\2.0\727ccb8f376109d0b5c44abca6f791dccc5c5dbc\roboguice-2.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="a681c044244d9fc375198588297a39ba78028423">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\retrofit-1.9.0-4507dd2f76e2cdf217ef46be346446d0fe069db6.jar" />
+        sha1="727ccb8f376109d0b5c44abca6f791dccc5c5dbc">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\roboguice-2.0-1ba1c73e084e5c9c726312740a502e2e8d8ccedd.jar" />
     </item>
     <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\jars\classes.jar"
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com-kangsoo-pharmacy\pagerslidingtabstrip-library\unspecified\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-d95f42cf1591557ea059afba019e3480e0401a23.jar" />
+        sha1="7cca9f90e4afe1bce1c407648e462184d0cf3c43">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-d7120309abade1badb0c10477820c52f119fd786.jar" />
+    </item>
+    <item
+        jar="C:\Dev\android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-7cb00d43ff266d62e5cfc8a98ae096a037b5d715.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.3.3\e02368d7b56c0c376f227378a4f77de62864d020\httpmime-4.3.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e02368d7b56c0c376f227378a4f77de62864d020">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\httpmime-4.3.3-b5955a93aa22905aacc6eb104d238c4f64c819cb.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-8cde84e8342fbc8eb179619e05cede320d70f17d.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-1e6627d571d04776d90eb5154f898f24112685e1.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-9717c3ee61ea12490961557e9a18a0eef02a9bd7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.sonatype.sisu.inject\cglib\2.2.1-v20090111\7ce5e983fd0e6c78346f4c9cbfa39d83049dda2\cglib-2.2.1-v20090111.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="07ce5e983fd0e6c78346f4c9cbfa39d83049dda2">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\cglib-2.2.1-v20090111-cb409371aca3b052ed5dec3d037acbd2b5e97fab.jar" />
     </item>
     <item
         jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
@@ -121,11 +79,81 @@
         <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\javax.inject-1-273da2ba53aedc2691b5c6c4485ebe7b12b6e634.jar" />
     </item>
     <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-e460e86f41268bf2ffe15334db9f6aae181cce37.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-75a7d8098a0c64737d780f78e56ac39c721e5c16.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.github.chrisbanes.photoview\library\1.2.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="81aa0e8e77d948204aa6754019c6f3c04dd922e3">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-7ba80a158318aa8eb1dc96987baea5cd182292f7.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-d95f42cf1591557ea059afba019e3480e0401a23.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-131dc6ca7ca74270239ab67604ea9b7a461c0638.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\aopalliance\aopalliance\1.0\235ba8b489512805ac13a8f9ea77a1ca5ebe3e8\aopalliance-1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\aopalliance-1.0-23313babe0e15a724b4daff89296f4ef88c503db.jar" />
+    </item>
+    <item
         jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
         <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-7e36ed68c83c9083a4f4e54da2631ff9b20c4709.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-f068b51b60a41f8cd219125c6219a7fe50e2b230.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-e119c29965f9167f2f5079da64bba023eb1e18d0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\asm\asm\3.1\c157def142714c544bdea2e6144645702adf7097\asm-3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c157def142714c544bdea2e6144645702adf7097">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\asm-3.1-a3f2c0c4c1e4168bb04b7c0e84ed6de29b20c0ee.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-7400bb8fb72122cf445641ada4adc2c157c3ba73.jar" />
     </item>
     <item
         jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.github.kevinsawicki\http-request\5.6\168305b7a983142b6311a005f0ad96d3b34d92d\http-request-5.6.jar"
@@ -135,11 +163,67 @@
         <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\http-request-5.6-e85d127bd681512f4b3d6fb81385c277bbc6f74e.jar" />
     </item>
     <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\jars\classes.jar"
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-7400bb8fb72122cf445641ada4adc2c157c3ba73.jar" />
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-8cada19f991b99eed788b06db762bb00c894d8d0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient-android\4.3.3\39ba75b570e5f1535356e8a1bf920b1c6cc83a9a\httpclient-android-4.3.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="39ba75b570e5f1535356e8a1bf920b1c6cc83a9a">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\httpclient-android-4.3.3-4f9e42a499fc23ffcf2102600e9c70a6a8180ab0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.inject.extensions\guice-assistedinject\3.0\544449ddb19f088dcde44f055d30a08835a954a7\guice-assistedinject-3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="544449ddb19f088dcde44f055d30a08835a954a7">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\guice-assistedinject-3.0-883a1b4a62852ca7bb4cb7dc1173c4c127290181.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-a3bb32a703793e8b3a7a5d419825a571b7beb805.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.liferay.mobile\liferay-push-notifications-portlet-android-sdk\6.2.0.4\b66af76c05883ad0c2e04a35fcbc35cc4be10a88\liferay-push-notifications-portlet-android-sdk-6.2.0.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b66af76c05883ad0c2e04a35fcbc35cc4be10a88">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\liferay-push-notifications-portlet-android-sdk-6.2.0.4-127c6c3a1293ba4a3e9ef66e0fcae841e28de058.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-79a954057f7ac3eb75ce677c1d2e9dbb21ebb5be.jar" />
+    </item>
+    <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-2141928be8e501f64d84f59657b8fff3d0fe0295.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.intellij\annotations\12.0\bbcf6448f6d40abe506e2c83b70a3e8bfd2b4539\annotations-12.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bbcf6448f6d40abe506e2c83b70a3e8bfd2b4539">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\annotations-12.0-91e42c740ae73990ce98e94981408dc3d92fb257.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.0\7ff0e000d1e27e356567f56c92af3b8ab912636f\picasso-2.5.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7ff0e000d1e27e356567f56c92af3b8ab912636f">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\picasso-2.5.0-d3251c17aa47f4d93359e6f33e09366b023c9759.jar" />
     </item>
     <item
         jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.0.0\jars\classes.jar"
@@ -156,18 +240,25 @@
         <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-dde41c50465e4ebd84185c72a946bd08a74ca41d.jar" />
     </item>
     <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.github.chrisbanes.photoview\library\1.2.3\jars\classes.jar"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="81aa0e8e77d948204aa6754019c6f3c04dd922e3">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-7ba80a158318aa8eb1dc96987baea5cd182292f7.jar" />
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\gson-2.3.1-3d67bc6296728dce11d45e3fe02a4d0f0bf336e9.jar" />
     </item>
     <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\universal-image-loader\1.9.3\a85588bec3e2c4584d593d3f15df1677321bca72\universal-image-loader-1.9.3.jar"
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-7663f8faae3d90805b2c7e72235949f4ecf3a339.jar" />
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-bbb276ac12fc8801cfb7a5d05876139f81602c82.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.inject\guice\3.0\28586dc97c525501329d9a242fc3402041e3572d\guice-3.0-no_aop.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="28586dc97c525501329d9a242fc3402041e3572d">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\guice-3.0-no_aop-86670b381b0e6f19595523f9c396461cdca462ff.jar" />
     </item>
     <item
         jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
@@ -177,6 +268,20 @@
         <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-f7c22afdbaa9fa051da0e21c14e280be0d0c53dd.jar" />
     </item>
     <item
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-bc065320bdd7de498ce0e3e1dc9710fa80776eb4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.3.0\1b355f73402020c5a0dcca58affc3ec3dfeabac1\okio-1.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1b355f73402020c5a0dcca58affc3ec3dfeabac1">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\okio-1.3.0-129db21943a48321f3fc3b05f16e4725120d8cc2.jar" />
+    </item>
+    <item
         jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -184,130 +289,25 @@
         <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-f26b09e3849d0d910ec89c7da71168a77f743ef5.jar" />
     </item>
     <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\jars\classes.jar"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.liferay.mobile\liferay-android-sdk\6.2.0.14\fbe1eef498ded111e22021e7f395c23b3ae0b289\liferay-android-sdk-6.2.0.14.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-2141928be8e501f64d84f59657b8fff3d0fe0295.jar" />
+        sha1="fbe1eef498ded111e22021e7f395c23b3ae0b289">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\liferay-android-sdk-6.2.0.14-39d7fbfdbb6da17b9dfc7a4c86b0895a9376bce8.jar" />
     </item>
     <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\jars\classes.jar"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\universal-image-loader\1.9.3\a85588bec3e2c4584d593d3f15df1677321bca72\universal-image-loader-1.9.3.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-79a954057f7ac3eb75ce677c1d2e9dbb21ebb5be.jar" />
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-7663f8faae3d90805b2c7e72235949f4ecf3a339.jar" />
     </item>
     <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.liferay.mobile\liferay-push-notifications-portlet-android-sdk\6.2.0.4\b66af76c05883ad0c2e04a35fcbc35cc4be10a88\liferay-push-notifications-portlet-android-sdk-6.2.0.4.jar"
+        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="b66af76c05883ad0c2e04a35fcbc35cc4be10a88">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\liferay-push-notifications-portlet-android-sdk-6.2.0.4-127c6c3a1293ba4a3e9ef66e0fcae841e28de058.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-8cde84e8342fbc8eb179619e05cede320d70f17d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.3.3\e02368d7b56c0c376f227378a4f77de62864d020\httpmime-4.3.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e02368d7b56c0c376f227378a4f77de62864d020">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\httpmime-4.3.3-b5955a93aa22905aacc6eb104d238c4f64c819cb.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-75a7d8098a0c64737d780f78e56ac39c721e5c16.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\gson-2.3.1-3d67bc6296728dce11d45e3fe02a4d0f0bf336e9.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.sonatype.sisu.inject\cglib\2.2.1-v20090111\7ce5e983fd0e6c78346f4c9cbfa39d83049dda2\cglib-2.2.1-v20090111.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="07ce5e983fd0e6c78346f4c9cbfa39d83049dda2">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\cglib-2.2.1-v20090111-cb409371aca3b052ed5dec3d037acbd2b5e97fab.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-9717c3ee61ea12490961557e9a18a0eef02a9bd7.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-e460e86f41268bf2ffe15334db9f6aae181cce37.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\aopalliance\aopalliance\1.0\235ba8b489512805ac13a8f9ea77a1ca5ebe3e8\aopalliance-1.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\aopalliance-1.0-23313babe0e15a724b4daff89296f4ef88c503db.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-e119c29965f9167f2f5079da64bba023eb1e18d0.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.roboguice\roboguice\2.0\727ccb8f376109d0b5c44abca6f791dccc5c5dbc\roboguice-2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="727ccb8f376109d0b5c44abca6f791dccc5c5dbc">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\roboguice-2.0-1ba1c73e084e5c9c726312740a502e2e8d8ccedd.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.inject.extensions\guice-assistedinject\3.0\544449ddb19f088dcde44f055d30a08835a954a7\guice-assistedinject-3.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="544449ddb19f088dcde44f055d30a08835a954a7">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\guice-assistedinject-3.0-883a1b4a62852ca7bb4cb7dc1173c4c127290181.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-8cada19f991b99eed788b06db762bb00c894d8d0.jar" />
-    </item>
-    <item
-        jar="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-131dc6ca7ca74270239ab67604ea9b7a461c0638.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient-android\4.3.3\39ba75b570e5f1535356e8a1bf920b1c6cc83a9a\httpclient-android-4.3.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="39ba75b570e5f1535356e8a1bf920b1c6cc83a9a">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\httpclient-android-4.3.3-4f9e42a499fc23ffcf2102600e9c70a6a8180ab0.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.intellij\annotations\12.0\bbcf6448f6d40abe506e2c83b70a3e8bfd2b4539\annotations-12.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="bbcf6448f6d40abe506e2c83b70a3e8bfd2b4539">
-        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\annotations-12.0-91e42c740ae73990ce98e94981408dc3d92fb257.jar" />
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="C:\Dev\androidStudioProjects\com-kangsoo-pharmacy\app\build\intermediates\pre-dexed\debug\classes-1ac830cf728aaaafa12c6d3de4222e9b88368eb4.jar" />
     </item>
 
 </items>

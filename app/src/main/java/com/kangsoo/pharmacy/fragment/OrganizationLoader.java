@@ -30,12 +30,13 @@ import com.liferay.mobile.android.task.callback.typed.JSONObjectAsyncTaskCallbac
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Load of a {@link List} or {@link User} organizations
  */
-public class OrganizationLoader extends AuthenticatedUserLoader<User> {
+public class OrganizationLoader extends AuthenticatedUserLoader<List<User>> {
 
     private static final String TAG = "OrganizationLoader";
     private User org;
@@ -47,12 +48,12 @@ public class OrganizationLoader extends AuthenticatedUserLoader<User> {
     }
 
     @Override
-    protected User getAccountFailureData() {
+    protected List<User> getAccountFailureData() {
         return null;
     }
 
     @Override
-    public User load(final Account account) {
+    public List<User> load(final Account account) {
 
         try {
             Session session = SettingsUtil.getSession();
@@ -78,6 +79,10 @@ public class OrganizationLoader extends AuthenticatedUserLoader<User> {
             return null;
         }
 
-        return org;
+        List<User> data;
+        data = new ArrayList<>();
+        data.add(org);
+
+        return data;
     }
 }
