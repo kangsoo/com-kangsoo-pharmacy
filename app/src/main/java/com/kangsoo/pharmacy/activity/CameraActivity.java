@@ -9,8 +9,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -44,12 +42,13 @@ public class CameraActivity extends Fragment implements CameraFragmentListener {
 
     private PagerSlidingTabStrip tabs;
     private ViewPager pager;
-    private MyPagerAdapter adapter;
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        super.onCreateView(inflater, container, savedInstanceState);
+
 //        return super.onCreateView(inflater, container, savedInstanceState);
 
         View v = inflater.inflate(R.layout.activity_camera, container, false);
@@ -133,32 +132,6 @@ public class CameraActivity extends Fragment implements CameraFragmentListener {
 
     private void showSavingPictureErrorToast() {
         Toast.makeText(getActivity(), getText(R.string.toast_error_save_picture), Toast.LENGTH_SHORT).show();
-    }
-
-
-    public class MyPagerAdapter extends FragmentPagerAdapter {
-
-        private final String[] TITLES = {"촬영", "전송이력", "복약지도", "처방내역"};
-
-        public MyPagerAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return TITLES[position];
-        }
-
-        @Override
-        public int getCount() {
-            return TITLES.length;
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return SuperAwesomeCardFragment.newInstance(position);
-        }
-
     }
 
 }
