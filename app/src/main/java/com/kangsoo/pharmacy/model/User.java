@@ -35,6 +35,8 @@ public class User implements Comparable<User>, Serializable {
 
 	public static final String USER_ID = "userId";
 
+	public static String PHONE_NUMBER = "phoneNumber";
+
 	public User(JSONObject jsonObj) throws JSONException {
 		_userId = jsonObj.getLong(USER_ID);
 		_contactId = jsonObj.getLong(CONTACT_ID);
@@ -63,6 +65,10 @@ public class User implements Comparable<User>, Serializable {
 		return _name;
 	}
 
+	public String getPhoneNumber() {
+		return _phoneNumber;
+	}
+
 	public long getUserId() {
 		return _userId;
 	}
@@ -83,6 +89,10 @@ public class User implements Comparable<User>, Serializable {
 		_name = name;
 	}
 
+	public void setPhoneNumber(String phoneNumber) {
+		_phoneNumber = phoneNumber;
+	}
+
 	public void setUserId(long userId) {
 		_userId = userId;
 	}
@@ -95,6 +105,7 @@ public class User implements Comparable<User>, Serializable {
 	private long _contactId;
 	private String _lastName;
 	private String _name;
+	private String _phoneNumber;
 	private long _userId;
 
 }

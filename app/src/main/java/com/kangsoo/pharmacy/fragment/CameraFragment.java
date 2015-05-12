@@ -73,10 +73,9 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback, 
      */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         CameraPreview previewView = new CameraPreview(getActivity());
-
         previewView.getHolder().addCallback(this);
-
         return previewView;
     }
 

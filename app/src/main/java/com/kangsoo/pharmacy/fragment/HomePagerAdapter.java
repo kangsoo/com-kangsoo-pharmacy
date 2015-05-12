@@ -34,14 +34,11 @@ import java.util.Set;
 public class HomePagerAdapter extends FragmentPagerAdapter {
 
     private final User org;
-
     private boolean defaultUser;
-
     private final FragmentManager fragmentManager;
-
     private final Resources resources;
-
     private final Set<String> tags = new HashSet<>();
+    private final String DESCRIBABLE_KEY = "com.kangsoo.MESSAGE";
 
     /**
      * @param fragment
@@ -61,12 +58,17 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
 
         Fragment fragment = null;
         switch (position) {
-            case 0:
+//            case 0:
 //                fragment = defaultUser ? new UserReceivedNewsFragment() : new OrganizationNewsFragment();
 //                fragment = new UserReceivedNewsFragment();
 //                fragment = new CameraFragment();
-                fragment = new CameraActivity();
-                break;
+//                fragment = new CameraActivity();
+//
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable(DESCRIBABLE_KEY, this.org);
+//                fragment.setArguments(bundle);
+//
+//                break;
 //            case 1:
 //                fragment = new RepositoryListFragment();
 //                break;

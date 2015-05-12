@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.ShareActionProvider;
 
 import com.kangsoo.pharmacy.R;
+import com.kangsoo.pharmacy.model.User;
 import com.kangsoo.pharmacy.task.WikiUploadAsyncTask;
 import com.kangsoo.pharmacy.util.SettingsUtil;
 import com.kangsoo.pharmacy.util.ToastUtil;
@@ -44,6 +45,10 @@ public class PhotoActivity extends Fragment {
     private AnimatorSet _topBarIconAnimation;
     private ImageView _topBarIcon;
     private WifiManager wifiManager;
+
+    private User mUser;
+    private final String DESCRIBABLE_KEY = "com.kangsoo.MESSAGE";
+
 
     @Nullable
     @Override

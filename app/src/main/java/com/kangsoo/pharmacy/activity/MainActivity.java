@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.SearchView;
+import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -128,6 +129,16 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
             return;
 
         this.org = user;
+
+        TelephonyManager mTelephonyMgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+
+        String sDeviceID = mTelephonyMgr.getDeviceId();
+        String sSimSerial = mTelephonyMgr.getSimSerialNumber();
+        String number = mTelephonyMgr.getLine1Number();
+
+        if(number != null){
+            user.setPhoneNumber(number);
+        }
 
         if (navigationAdapter != null)
             navigationAdapter.setOrgs(user);
