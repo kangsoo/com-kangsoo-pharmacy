@@ -10,7 +10,7 @@ import android.view.SurfaceView;
  * @author Sebastian Kaspari <sebastian@kangsoo.com>
  */
 public class CameraPreview extends SurfaceView {
-    private static final double ASPECT_RATIO = 3.0 / 4.0;
+    private static final double ASPECT_RATIO = 3.5 / 4.0;
 
     public CameraPreview(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

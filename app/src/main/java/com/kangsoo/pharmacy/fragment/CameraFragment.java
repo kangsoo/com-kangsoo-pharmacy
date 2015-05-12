@@ -31,6 +31,7 @@ import java.util.List;
  * @author Sebastian Kaspari <sebastian@kangsoo.com>
  */
 public class CameraFragment extends Fragment implements SurfaceHolder.Callback, Camera.PictureCallback {
+
     public static final String TAG = "Mustache/CameraFragment";
 
     private static final int PICTURE_SIZE_MAX_WIDTH = 1280;
@@ -55,13 +56,11 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback, 
 
         mActivity = activity;
 
-/*
         if (!(activity instanceof CameraFragmentListener)) {
             throw new IllegalArgumentException(
                 "Activity has to implement CameraFragmentListener interface"
             );
         }
-*/
 
         listener = (CameraFragmentListener) activity;
 
