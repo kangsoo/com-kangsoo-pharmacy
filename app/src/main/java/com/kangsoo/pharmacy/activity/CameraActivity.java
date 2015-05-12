@@ -34,7 +34,10 @@ import java.util.Date;
  *
  * @author Sebastian Kaspari <sebastian@kangsoo.com>
  */
-public class CameraActivity extends Fragment implements CameraFragmentListener {
+public class CameraActivity extends Fragment {
+
+    //kskim to-do list
+    CameraFragmentListener cameraFragmentListener;
 
     public final static String EXTRA_MESSAGE = "com.kangsoo.MESSAGE";
 
@@ -57,11 +60,14 @@ public class CameraActivity extends Fragment implements CameraFragmentListener {
 
         View v = inflater.inflate(R.layout.activity_camera, container, false);
 
+        insertNestedFragment();
+
         return v;
     }
 
     // Embeds the child fragment dynamically
     private void insertNestedFragment() {
+
         Fragment childFragment = new CameraFragment();
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
         transaction.replace(R.id.camera_fragment, childFragment).commit();
@@ -71,6 +77,8 @@ public class CameraActivity extends Fragment implements CameraFragmentListener {
     /**
      * On fragment notifying about a non-recoverable problem with the camera.
      */
+//kskim to-do list
+/*
     @Override
     public void onCameraError() {
 
@@ -78,6 +86,7 @@ public class CameraActivity extends Fragment implements CameraFragmentListener {
         getActivity().finish();
 
     }
+*/
 
     /**
      * The user wants to take a picture.
@@ -87,6 +96,8 @@ public class CameraActivity extends Fragment implements CameraFragmentListener {
     public void takePicture(View view) {
 
         view.setEnabled(false);
+
+        cameraFragmentListener.onPictureTaken(null);
 
 //        CameraFragment fragment = (CameraFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.camera_fragment);
 //
@@ -134,7 +145,6 @@ public class CameraActivity extends Fragment implements CameraFragmentListener {
                 null
         );
 
-
 /*
         Intent intent = new Intent(getActivity(), PhotoActivity.class);
         intent.setData(Uri.fromFile(mediaFile));
@@ -145,7 +155,7 @@ public class CameraActivity extends Fragment implements CameraFragmentListener {
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         PhotoActivity photoActivity = new PhotoActivity();
-        ft.replace(R.id.container, photoActivity);
+        ft.replace(R.id.camera_fragment, photoActivity);
         ft.commit();
 
 //        getActivity().finish();

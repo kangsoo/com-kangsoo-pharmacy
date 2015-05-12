@@ -14,6 +14,7 @@ import android.view.OrientationEventListener;
  * @author Sebastian Kaspari <sebastian@kangsoo.com>
  */
 public class CameraOrientationListener extends OrientationEventListener {
+
     private int currentNormalizedOrientation;
     private int rememberedNormalizedOrientation;
 

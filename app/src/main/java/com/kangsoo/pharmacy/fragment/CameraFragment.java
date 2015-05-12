@@ -39,12 +39,12 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback, 
     private int cameraId;
     private Camera camera;
     private SurfaceHolder surfaceHolder;
-    private CameraFragmentListener listener;
     private int displayOrientation;
     private int layoutOrientation;
     private Activity mActivity;
 
     private CameraOrientationListener orientationListener;
+    private CameraFragmentListener listener;
 
     /**
      * On activity getting attached.
@@ -143,6 +143,7 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback, 
      * accordingly.
      */
     public void determineDisplayOrientation() {
+
         CameraInfo cameraInfo = new CameraInfo();
         Camera.getCameraInfo(cameraId, cameraInfo);
 

@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/sendPhoto"
         android:orderInCategory="100"
-        android:showAsAction="ifRoom"
+        app:showAsAction="ifRoom"
         android:title="@string/sendPhoto"/>
 
     <item
         android:id="@+id/share"
         android:orderInCategory="200"
         android:actionProviderClass="android.widget.ShareActionProvider"
-        android:showAsAction="never"
+        app:showAsAction="never"
         android:title="@string/action_share"/>
 
     <item
         android:id="@+id/settings"
         android:orderInCategory="300"
-        android:showAsAction="never"
+        app:showAsAction="never"
         android:title="@string/settings"/>
 
 </menu><!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/menu/activity_photo.xml -->

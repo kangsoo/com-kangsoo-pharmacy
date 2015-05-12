@@ -56,19 +56,19 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
 
-        Fragment fragment = null;
+        Fragment fragment = new Fragment();
         switch (position) {
-//            case 0:
+            case 0:
 //                fragment = defaultUser ? new UserReceivedNewsFragment() : new OrganizationNewsFragment();
 //                fragment = new UserReceivedNewsFragment();
 //                fragment = new CameraFragment();
-//                fragment = new CameraActivity();
+                fragment = new CameraActivity();
 //
 //                Bundle bundle = new Bundle();
 //                bundle.putSerializable(DESCRIBABLE_KEY, this.org);
 //                fragment.setArguments(bundle);
 //
-//                break;
+                break;
 //            case 1:
 //                fragment = new RepositoryListFragment();
 //                break;
@@ -80,7 +80,7 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
 //                break;
             default:
 //                fragment = new CameraFragment();
-                fragment = new CameraActivity();
+//                fragment = new CameraActivity();
                 break;
         }
 

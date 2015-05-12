@@ -2,6 +2,7 @@ package com.kangsoo.pharmacy.activity;
 
 import android.app.SearchManager;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 import com.kangsoo.pharmacy.R;
 import com.kangsoo.pharmacy.fragment.HomePagerFragment;
 import com.kangsoo.pharmacy.fragment.UserLoader;
+import com.kangsoo.pharmacy.listener.CameraFragmentListener;
 import com.kangsoo.pharmacy.model.User;
 
 import java.util.Collections;
@@ -30,8 +32,7 @@ import static com.kangsoo.pharmacy.activity.NavigationDrawerObject.TYPE_SEPERATO
  * Created by bsnc on 2015-05-10.
  */
 public class MainActivity extends BaseActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks,
-        UserLoader.UserLoaderCallbacks {
-//        LoaderManager.LoaderCallbacks<List<User>> {
+        UserLoader.UserLoaderCallbacks, CameraFragmentListener {
 
     private static final String TAG = "MainActivity";
     private NavigationDrawerFragment mNavigationDrawerFragment;
@@ -71,15 +72,6 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
     protected void onResume() {
         super.onResume();
 
-/*
-        UsersAsyncTask task = new UsersAsyncTask(MainActivity.this);
-        task.execute();
-*/
-
-        // Restart loader if default account doesn't match currently loaded
-        // account
-        List<User> currentOrgs = orgs;
-
     }
 
     @Override
@@ -90,26 +82,25 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
         }
 
         Fragment fragment;
-        fragment = new HomePagerFragment();
         Bundle args = new Bundle();
 
         switch (position) {
-            case 1:
-//                fragment = new HomePagerFragment();
-//                args.putSerializable("org", org);
-                break;
-
-            case 2:
-//                fragment = new GistsPagerFragment();
-                break;
-
-            case 3:
-//                fragment = new IssueDashboardPagerFragment();
-                break;
-
-            case 4:
-//                fragment = new FilterListFragment();
-                break;
+//            case 1:
+////                fragment = new HomePagerFragment();
+////                args.putSerializable("org", org);
+//                break;
+//
+//            case 2:
+////                fragment = new GistsPagerFragment();
+//                break;
+//
+//            case 3:
+////                fragment = new IssueDashboardPagerFragment();
+//                break;
+//
+//            case 4:
+////                fragment = new FilterListFragment();
+//                break;
 
             default:
                 fragment = new HomePagerFragment();
@@ -184,4 +175,15 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
         }, 2000);
     }
 
+    @Override
+    public void onCameraError() {
+        //kskim to-do list
+        Toast.makeText(MainActivity.this, "카메라가 정상동작하고 있지않습니다.", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onPictureTaken(Bitmap bitmap) {
+        //kskim to-do list
+        Toast.makeText(MainActivity.this, "사진촬영이 정상적으로 완료되었습니다.", Toast.LENGTH_SHORT).show();
+    }
 }
