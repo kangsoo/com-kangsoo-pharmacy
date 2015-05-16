@@ -22,4 +22,10 @@ public interface CameraFragmentListener {
      * @param bitmap
      */
     public void onPictureTaken(Bitmap bitmap);
+
+    /**
+     * Take a Picture
+     */
+    public void onTakePicture();
+
 }

@@ -4,7 +4,7 @@
     android:versionName="Initialize" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="17"
         android:targetSdkVersion="22" />
 
     <uses-feature

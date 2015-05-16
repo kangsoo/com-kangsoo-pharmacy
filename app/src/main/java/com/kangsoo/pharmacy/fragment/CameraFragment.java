@@ -45,7 +45,7 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback, 
     private Activity mActivity;
 
     private CameraOrientationListener orientationListener;
-    private CameraFragmentListener listener;
+    private CameraFragmentListener cameraFragmentListener;
 
     /**
      * On activity getting attached.
@@ -62,8 +62,7 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback, 
             );
         }
 
-        listener = (CameraFragmentListener) activity;
-
+        cameraFragmentListener = (CameraFragmentListener) activity;
         orientationListener = new CameraOrientationListener(activity);
     }
 
@@ -92,7 +91,7 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback, 
         } catch (Exception exception) {
             Log.e(TAG, "Can't open camera with id " + cameraId, exception);
 
-            listener.onCameraError();
+            cameraFragmentListener.onCameraError();
         }
     }
 
@@ -122,7 +121,7 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback, 
         } catch (Exception exception) {
             Log.e(TAG, "Can't start camera preview due to Exception", exception);
 
-            listener.onCameraError();
+            cameraFragmentListener.onCameraError();
         }
     }
 
@@ -223,7 +222,7 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback, 
         }
 
         if (bestSize == null) {
-            listener.onCameraError();
+            cameraFragmentListener.onCameraError();
 
             return sizes.get(0);
         }
@@ -283,6 +282,7 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback, 
      */
     @Override
     public void onPictureTaken(byte[] data, Camera camera) {
+
         Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
 
         int rotation = (
@@ -310,7 +310,7 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback, 
             oldBitmap.recycle();
         }
 
-        listener.onPictureTaken(bitmap);
+        cameraFragmentListener.onPictureTaken(bitmap);
     }
 
     /**

@@ -18,6 +18,7 @@ import android.view.Window;
 import android.widget.Toast;
 
 import com.kangsoo.pharmacy.R;
+import com.kangsoo.pharmacy.fragment.CameraFragment;
 import com.kangsoo.pharmacy.fragment.HomePagerFragment;
 import com.kangsoo.pharmacy.fragment.UserLoader;
 import com.kangsoo.pharmacy.listener.CameraFragmentListener;
@@ -81,14 +82,15 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
             return;
         }
 
-        Fragment fragment;
+        Fragment fragment = null;
         Bundle args = new Bundle();
 
         switch (position) {
-//            case 1:
-////                fragment = new HomePagerFragment();
-////                args.putSerializable("org", org);
-//                break;
+            case 1:
+                fragment = new HomePagerFragment();
+                args.putSerializable("org", org);
+                break;
+
 //
 //            case 2:
 ////                fragment = new GistsPagerFragment();
@@ -101,11 +103,6 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
 //            case 4:
 ////                fragment = new FilterListFragment();
 //                break;
-
-            default:
-                fragment = new HomePagerFragment();
-                args.putSerializable("org", org);
-                break;
         }
 
         fragment.setArguments(args);
@@ -127,7 +124,7 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
         String sSimSerial = mTelephonyMgr.getSimSerialNumber();
         String number = mTelephonyMgr.getLine1Number();
 
-        if(number != null){
+        if (number != null) {
             user.setPhoneNumber(number);
         }
 
@@ -149,7 +146,7 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
             view.post(new Runnable() {
                 @Override
                 public void run() {
-                    MainActivity.this.onNavigationDrawerItemSelected(0);
+                    MainActivity.this.onNavigationDrawerItemSelected(1);
                 }
             });
         }
@@ -175,6 +172,9 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
         }, 2000);
     }
 
+    /**
+     * On fragment notifying about a non-recoverable problem with the camera.
+     */
     @Override
     public void onCameraError() {
         //kskim to-do list
@@ -183,7 +183,111 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
 
     @Override
     public void onPictureTaken(Bitmap bitmap) {
+
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        HomePagerFragment homePagerFragment = (HomePagerFragment) fragmentManager.findFragmentById(R.id.container);
+//        CameraActivity cameraActivity = (CameraActivity) homePagerFragment.getChildFragmentManager().findFragmentById(R.id.vp_pages);
+//        cameraActivity.onPictureTaken(bitmap);
+
+        CameraActivity cameraActivity = getVisibleCameraActivityFragment();
+        cameraActivity.onPictureTaken(bitmap);
+
+        HomePagerFragment homePagerFragment = getVisibleHomePagerFragment();
+        homePagerFragment.setPagePosition(1);
+
         //kskim to-do list
         Toast.makeText(MainActivity.this, "사진촬영이 정상적으로 완료되었습니다.", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void onTakePicture() {
+
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        HomePagerFragment homePagerFragment = (HomePagerFragment) fragmentManager.findFragmentById(R.id.container);
+//        CameraActivity cameraActivity = (CameraActivity) homePagerFragment.getChildFragmentManager().findFragmentById(R.id.vp_pages);
+//        CameraFragment cameraFragment = (CameraFragment) cameraActivity.getChildFragmentManager().findFragmentById(R.id.camera_fragment);
+//        cameraFragment.takePicture();
+
+        CameraFragment cameraFragment = getVisibleCameraFragmentFragment();
+        cameraFragment.takePicture();
+
+        //kskim to-do list
+        Toast.makeText(MainActivity.this, "사진촬영 시작", Toast.LENGTH_SHORT).show();
+
+    }
+
+    public CameraFragment getVisibleCameraFragmentFragment() {
+
+        FragmentManager fragmentManager = MainActivity.this.getSupportFragmentManager();
+        List<Fragment> fragments = fragmentManager.getFragments();
+        for (Fragment fragment : fragments) {
+            if (fragment != null && fragment.getUserVisibleHint()) {
+
+                if (fragment instanceof HomePagerFragment) {
+
+                    List<Fragment> child_fragments = fragment.getChildFragmentManager().getFragments();
+
+                    for (Fragment child_fragment : child_fragments) {
+                        if (child_fragment != null && child_fragment.getUserVisibleHint()) {
+
+                            if (child_fragment instanceof CameraActivity) {
+
+                                List<Fragment> child_Camera_fragments = child_fragment.getChildFragmentManager().getFragments();
+
+                                for (Fragment child_Camera_fragment : child_Camera_fragments) {
+                                    if (child_Camera_fragment != null && child_Camera_fragment.getUserVisibleHint()) {
+                                        if (child_Camera_fragment instanceof CameraFragment) {
+                                            return (CameraFragment) child_Camera_fragment;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public CameraActivity getVisibleCameraActivityFragment() {
+
+        FragmentManager fragmentManager = MainActivity.this.getSupportFragmentManager();
+        List<Fragment> fragments = fragmentManager.getFragments();
+        for (Fragment fragment : fragments) {
+            if (fragment != null && fragment.getUserVisibleHint()) {
+
+                if (fragment instanceof HomePagerFragment) {
+
+                    List<Fragment> child_fragments = fragment.getChildFragmentManager().getFragments();
+
+                    for (Fragment child_fragment : child_fragments) {
+                        if (child_fragment != null && child_fragment.getUserVisibleHint()) {
+
+                            if (child_fragment instanceof CameraActivity) {
+                                return (CameraActivity) child_fragment;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public HomePagerFragment getVisibleHomePagerFragment() {
+
+        FragmentManager fragmentManager = MainActivity.this.getSupportFragmentManager();
+        List<Fragment> fragments = fragmentManager.getFragments();
+        for (Fragment fragment : fragments) {
+            if (fragment != null && fragment.getUserVisibleHint()) {
+
+                if (fragment instanceof HomePagerFragment) {
+                    return (HomePagerFragment) fragment;
+                }
+            }
+        }
+        return null;
+    }
+
 }

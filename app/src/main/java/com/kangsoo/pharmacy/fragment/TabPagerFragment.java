@@ -8,9 +8,11 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import com.kangsoo.pharmacy.R;
 
 import wishlist.ViewUtils;
-import com.kangsoo.pharmacy.R;
 
 import static android.widget.TabHost.OnTabChangeListener;
 import static android.widget.TabHost.TabContentFactory;
@@ -41,6 +43,7 @@ public abstract class TabPagerFragment<V extends PagerAdapter & FragmentProvider
 
     @Override
     public void onTabChanged(String tabId) {
+        Toast.makeText(getActivity(), "Tab Changed" + tabId, Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -98,6 +101,7 @@ public abstract class TabPagerFragment<V extends PagerAdapter & FragmentProvider
      * @param position
      */
     protected void setCurrentItem(final int position) {
+
         // Intentionally left blank
     }
 

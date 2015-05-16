@@ -1,5 +1,6 @@
 package com.kangsoo.pharmacy.activity;
 
+import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
 import android.media.MediaScannerConnection;
@@ -8,13 +9,13 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
@@ -34,7 +35,7 @@ import java.util.Date;
  *
  * @author Sebastian Kaspari <sebastian@kangsoo.com>
  */
-public class CameraActivity extends Fragment {
+public class CameraActivity extends Fragment implements View.OnClickListener {
 
     //kskim to-do list
     CameraFragmentListener cameraFragmentListener;
@@ -57,58 +58,49 @@ public class CameraActivity extends Fragment {
         super.onCreateView(inflater, container, savedInstanceState);
 
 //        mUser = (User) getArguments().getSerializable('org');
-
         View v = inflater.inflate(R.layout.activity_camera, container, false);
-
         insertNestedFragment();
-
         return v;
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        cameraFragmentListener = (CameraFragmentListener) activity;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        ImageButton button = (ImageButton) getActivity().findViewById(R.id.ibTakePicture);
+        button.setOnClickListener(this);
     }
 
     // Embeds the child fragment dynamically
     private void insertNestedFragment() {
-
         Fragment childFragment = new CameraFragment();
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
         transaction.replace(R.id.camera_fragment, childFragment).commit();
     }
 
+    // Embeds the child fragment dynamically
+    private void replaceNestedFragment(File pFile) {
 
-    /**
-     * On fragment notifying about a non-recoverable problem with the camera.
-     */
-//kskim to-do list
-/*
-    @Override
-    public void onCameraError() {
+        Fragment photoActivity = new PhotoActivity();
 
-        Toast.makeText(getActivity(), getString(R.string.toast_error_camera_preview), Toast.LENGTH_SHORT).show();
-        getActivity().finish();
+        Bundle args = new Bundle();
+        args.putSerializable("file", pFile);
+        photoActivity.setArguments(args);
 
-    }
-*/
-
-    /**
-     * The user wants to take a picture.
-     *
-     * @param view
-     */
-    public void takePicture(View view) {
-
-        view.setEnabled(false);
-
-        cameraFragmentListener.onPictureTaken(null);
-
-//        CameraFragment fragment = (CameraFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.camera_fragment);
-//
-//        fragment.takePicture();
-
+//        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+//        transaction.replace(R.id.camera_fragment, photoActivity).commit();
     }
 
     /**
      * A picture has been taken.
      */
     public void onPictureTaken(Bitmap bitmap) {
+
         File mediaStorageDir = new File(
                 Environment.getExternalStoragePublicDirectory(
                         Environment.DIRECTORY_PICTURES
@@ -152,11 +144,16 @@ public class CameraActivity extends Fragment {
         startActivity(intent);
 */
 
+/*
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         PhotoActivity photoActivity = new PhotoActivity();
         ft.replace(R.id.camera_fragment, photoActivity);
         ft.commit();
+*/
+
+        //Uri.fromFile(mediaFile)
+        replaceNestedFragment(mediaFile);
 
 //        getActivity().finish();
     }
@@ -165,4 +162,20 @@ public class CameraActivity extends Fragment {
         Toast.makeText(getActivity(), getText(R.string.toast_error_save_picture), Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * The user wants to take a picture.
+     *
+     * @param v
+     */
+    @Override
+    public void onClick(View v) {
+
+        v.setEnabled(false);
+
+        cameraFragmentListener.onTakePicture();
+
+//        CameraFragment fragment = (CameraFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.camera_fragment);
+//        fragment.takePicture();
+
+    }
 }

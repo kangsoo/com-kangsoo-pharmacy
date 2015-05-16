@@ -6,7 +6,7 @@ android {
     buildToolsVersion "22.0.1"
     defaultConfig {
         applicationId "com.kangsoo.pharmacy"
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 22
         versionName 'Initialize'
     }

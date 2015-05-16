@@ -2,6 +2,7 @@ package com.kangsoo.pharmacy.activity;
 
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -20,11 +21,13 @@ import android.widget.ImageView;
 import android.widget.ShareActionProvider;
 
 import com.kangsoo.pharmacy.R;
+import com.kangsoo.pharmacy.listener.CameraFragmentListener;
 import com.kangsoo.pharmacy.model.User;
 import com.kangsoo.pharmacy.task.WikiUploadAsyncTask;
 import com.kangsoo.pharmacy.util.SettingsUtil;
 import com.kangsoo.pharmacy.util.ToastUtil;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -36,7 +39,9 @@ import uk.co.senab.photoview.PhotoViewAttacher;
  *
  * @author Sebastian Kaspari <sebastian@kangsoo.com>
  */
-public class PhotoActivity extends Fragment {
+public class PhotoActivity extends Fragment implements View.OnClickListener {
+
+    CameraFragmentListener cameraFragmentListener;
 
     private static final String MIME_TYPE = "image/jpeg";
     private Uri uri;
@@ -50,35 +55,47 @@ public class PhotoActivity extends Fragment {
     private final String DESCRIBABLE_KEY = "com.kangsoo.MESSAGE";
 
 
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+
+        cameraFragmentListener = (CameraFragmentListener) activity;
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        return super.onCreateView(inflater, container, savedInstanceState);
+        super.onCreateView(inflater, container, savedInstanceState);
 
-        uri = getActivity().getIntent().getData();
-
+        //kskim to-do merge tag ==> replace to FrmaeLayout
         View v = inflater.inflate(R.layout.activity_photo, container, false);
 
+        File file;
+        file = (File) getArguments().getSerializable("file");
+        if(file != null){
+            uri = Uri.fromFile(file);
+        }
+
+        return v;
+
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
         ImageView photoView = (ImageView) getActivity().findViewById(R.id.photo);
-        photoView.setImageURI(uri);
+        if(uri == null){
+            photoView.setImageResource(R.drawable.ic_action_camera);
+        }else{
+            photoView.setImageURI(uri);
+        }
 
         _topBarIcon = (ImageView) getActivity().findViewById(R.id.top_bar_icon);
-        _topBarIcon.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                PhotoActivity.this._animateTopBarIcon();
-
-                Intent intent = new Intent(getActivity(), CameraActivity.class);
-                startActivity(intent);
-            }
-
-        });
+        _topBarIcon.setOnClickListener(this);
 
         // The MAGIC happens here!
         PhotoViewAttacher mAttacher = new PhotoViewAttacher(photoView);
-
-        return v;
 
     }
 
@@ -166,5 +183,11 @@ public class PhotoActivity extends Fragment {
         if (!_topBarIconAnimation.isStarted()) {
             _topBarIconAnimation.start();
         }
+    }
+
+    @Override
+    public void onClick(View v) {
+        PhotoActivity.this._animateTopBarIcon();
+        cameraFragmentListener.onTakePicture();
     }
 }

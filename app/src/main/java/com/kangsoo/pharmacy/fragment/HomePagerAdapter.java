@@ -23,6 +23,7 @@ import android.view.ViewGroup;
 
 import com.kangsoo.pharmacy.R;
 import com.kangsoo.pharmacy.activity.CameraActivity;
+import com.kangsoo.pharmacy.activity.PhotoActivity;
 import com.kangsoo.pharmacy.model.User;
 
 import java.util.HashSet;
@@ -38,7 +39,6 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
     private final FragmentManager fragmentManager;
     private final Resources resources;
     private final Set<String> tags = new HashSet<>();
-    private final String DESCRIBABLE_KEY = "com.kangsoo.MESSAGE";
 
     /**
      * @param fragment
@@ -46,7 +46,6 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
      */
     public HomePagerAdapter(final Fragment fragment, final boolean defaultUser, final User org) {
         super(fragment);
-
         this.org = org;
         fragmentManager = fragment.getChildFragmentManager();
         resources = fragment.getResources();
@@ -59,29 +58,24 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
         Fragment fragment = new Fragment();
         switch (position) {
             case 0:
-//                fragment = defaultUser ? new UserReceivedNewsFragment() : new OrganizationNewsFragment();
-//                fragment = new UserReceivedNewsFragment();
-//                fragment = new CameraFragment();
                 fragment = new CameraActivity();
-//
+                break;
 //                Bundle bundle = new Bundle();
 //                bundle.putSerializable(DESCRIBABLE_KEY, this.org);
 //                fragment.setArguments(bundle);
-//
+            case 1:
+                fragment = new PhotoActivity();
                 break;
-//            case 1:
-//                fragment = new RepositoryListFragment();
-//                break;
 //            case 2:
 //                fragment = defaultUser ? new MyFollowersFragment() : new MembersFragment();
 //                break;
 //            case 3:
 //                fragment = new MyFollowingFragment();
 //                break;
-            default:
+//            default:
 //                fragment = new CameraFragment();
 //                fragment = new CameraActivity();
-                break;
+//                break;
         }
 
         if (fragment != null) {

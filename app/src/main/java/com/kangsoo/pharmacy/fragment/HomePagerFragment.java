@@ -21,6 +21,8 @@ public class HomePagerFragment extends TabPagerFragment<HomePagerAdapter> {
 
     private User org;
 
+    private HomePagerAdapter homePagerAdapter;
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -38,6 +40,13 @@ public class HomePagerFragment extends TabPagerFragment<HomePagerAdapter> {
 
     @Override
     protected HomePagerAdapter createAdapter() {
-        return new HomePagerAdapter(this, isDefaultUser, org);
+        homePagerAdapter = new HomePagerAdapter(this, isDefaultUser, org);
+        return homePagerAdapter;
+    }
+
+    public void setPagePosition(int position){
+
+        homePagerAdapter.getItem(position);
+//        this.onPageSelected(position);
     }
 }
