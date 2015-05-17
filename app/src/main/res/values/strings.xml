@@ -30,7 +30,7 @@
 
 
     <string name="home">Home</string>
-    <string name="order">처방</string>
+    <string name="order">상품조회</string>
     <string name="account">계정정보</string>
     <string name="bookmarks">즐겨찾기</string>
     <string name="find_repositories">Find Repositories</string>

@@ -60,6 +60,7 @@ dependencies {
     compile 'com.jakewharton:butterknife:6.1.0'
     compile files('libs/android-sdk_1.0.6.jar')
     compile files('libs/core-sdk-1.0.6.jar')
+//    compile 'org.apache.httpcomponents:httpclient-android:4.+'
 }
 
 task wrapper(type: Wrapper) {
