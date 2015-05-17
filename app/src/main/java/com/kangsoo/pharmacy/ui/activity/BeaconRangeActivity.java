@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -32,7 +33,6 @@ import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import butterknife.OnItemClick;
 
 public class BeaconRangeActivity extends Fragment {
 
@@ -146,6 +146,15 @@ public class BeaconRangeActivity extends Fragment {
         deviceList = (ListView) getActivity().findViewById(R.id.device_list);
         deviceList.setAdapter(adapter);
 
+        deviceList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                onListItemClick(position);
+
+            }
+        });
+
     }
 
     @Override
@@ -178,7 +187,6 @@ public class BeaconRangeActivity extends Fragment {
         ButterKnife.reset(this);
     }
 
-    @OnItemClick(R.id.device_list)
     void onListItemClick(final int position) {
         final BeaconDevice beacon = (BeaconDevice) adapter.getItem(position);
         if (beacon != null) {

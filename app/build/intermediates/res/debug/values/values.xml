@@ -576,7 +576,7 @@ available. Please contact the developer for assistance.</string>
     <eat-comment/>
     <string name="submit">Submit</string>
     <string name="syncing_config">Syncing config…</string>
-    <string name="tab_drugInfo">이력조회</string>
+    <string name="tab_drugInfo">비콘목록</string>
     <string name="tab_orderHistory">상품정보</string>
     <string name="tab_passHistory">미리보기</string>
     <string name="tab_takepicture">촬영</string>

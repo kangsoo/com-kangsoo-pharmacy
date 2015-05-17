@@ -32,6 +32,7 @@ public class WikiUploadAsyncTask extends AsyncTask<String, String, Integer> {
     private ProgressDialog mDlg;
     private Context mContext;
     private float totalSize;
+    private String mPhoneNumber;
     private int sendCount = 0;
 
     public WikiUploadAsyncTask(Context mContext) {
@@ -54,6 +55,7 @@ public class WikiUploadAsyncTask extends AsyncTask<String, String, Integer> {
 
         String photoPath = params[0];
         totalSize = Float.parseFloat(params[1]);
+        mPhoneNumber = params[2];
 
         Session session = SettingsUtil.getSession();
         session.setCallback(_getCallback());
@@ -75,7 +77,7 @@ public class WikiUploadAsyncTask extends AsyncTask<String, String, Integer> {
             publishProgress("Max", Integer.toString(100));
 
             try {
-                service.addPage(21478, filename, "Contents kangsookim {{" + filename + "}}", "", false, new JSONObjectWrapper(jsonObject));
+                service.addPage(21478, filename, "Contents kangsookim {{" + filename + "}}", mPhoneNumber, false, new JSONObjectWrapper(jsonObject));
                 service.addPageAttachment(21478, filename, filename, imageFile, mimeType);
             } catch (Exception e) {
                 e.printStackTrace();

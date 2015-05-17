@@ -7,7 +7,9 @@
     <ListView
         android:id="@+id/device_list"
         android:layout_width="match_parent"
-        android:theme="@style/Base.Widget.AppCompat.ListView"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:layout_height="wrap_content"/>
 
+    <!--android:theme="@style/Base.Widget.AppCompat.ListView"-->
+    <!--Theme.AppCompat.Light.NoActionBar-->
 </LinearLayout>

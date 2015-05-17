@@ -56,12 +56,12 @@ public class PhotoActivity extends Fragment implements View.OnClickListener {
     private final String DESCRIBABLE_KEY = "com.kangsoo.MESSAGE";
     private ImageView photoView;
 
-
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
 
         cameraFragmentListener = (CameraFragmentListener) activity;
+        mUser = MainActivity.org;
     }
 
     @Nullable
@@ -146,7 +146,7 @@ public class PhotoActivity extends Fragment implements View.OnClickListener {
         WikiUploadAsyncTask task = new WikiUploadAsyncTask(getActivity());
         try {
             fileInputStream = getActivity().getContentResolver().openInputStream(uri);
-            task.execute(uri.getPath(), Integer.toString(ToastUtil.getBytes(fileInputStream).length));
+            task.execute(uri.getPath(), Integer.toString(ToastUtil.getBytes(fileInputStream).length), mUser.getPhoneNumber());
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

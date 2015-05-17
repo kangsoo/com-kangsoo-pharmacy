@@ -40,7 +40,7 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private List<User> orgs = Collections.emptyList();
     private NavigationDrawerAdapter navigationAdapter;
-    private User org;
+    public static User org;
     private boolean exitConfirmation = false;
 
     @Override
