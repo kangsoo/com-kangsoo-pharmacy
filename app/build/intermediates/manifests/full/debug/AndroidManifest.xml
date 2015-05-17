@@ -40,7 +40,7 @@
         android:name="com.kangsoo.pharmacy.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.kangsoo.mustache.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.kangsoo.pharmacy.permission.C2D_MESSAGE" />
 
     <supports-screens
         android:largeScreens="true"
@@ -82,7 +82,6 @@
             android:configChanges="orientation|screenSize"
             android:uiOptions="splitActionBarWhenNarrow" />
         <activity android:name="com.kangsoo.pharmacy.ui.activity.BeaconMonitorActivity" />
-        <activity android:name="com.kangsoo.pharmacy.ui.activity.BeaconRangeActivity" />
         <activity android:name="com.kangsoo.pharmacy.ui.activity.BeaconManagementActivity" />
         <activity android:name="com.kangsoo.pharmacy.ui.activity.BackgroundScanActivity" />
         <activity android:name="com.kangsoo.pharmacy.ui.activity.ProfilesActivity" />
@@ -108,7 +107,7 @@
             android:name="com.kangsoo.pharmacy.receiver.BackgroundScanReceiver"
             android:exported="false" >
             <intent-filter android:priority="1" >
-                <action android:name="com.kontakt.sample.service.BackgroundScanService.BROADCAST" />
+                <action android:name="com.kangsoo.pharmacy.service.BackgroundScanService.BROADCAST" />
             </intent-filter>
         </receiver>
 

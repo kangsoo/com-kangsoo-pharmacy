@@ -72,6 +72,7 @@ public class CameraActivity extends Fragment implements View.OnClickListener {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
         ImageButton button = (ImageButton) getActivity().findViewById(R.id.ibTakePicture);
         button.setOnClickListener(this);
     }

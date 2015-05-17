@@ -25,6 +25,7 @@ import com.kangsoo.pharmacy.R;
 import com.kangsoo.pharmacy.activity.CameraActivity;
 import com.kangsoo.pharmacy.activity.PhotoActivity;
 import com.kangsoo.pharmacy.model.User;
+import com.kangsoo.pharmacy.ui.activity.BeaconRangeActivity;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -66,9 +67,11 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
             case 1:
                 fragment = new PhotoActivity();
                 break;
-//            case 2:
-//                fragment = defaultUser ? new MyFollowersFragment() : new MembersFragment();
-//                break;
+
+            case 2:
+                fragment = new BeaconRangeActivity();
+                break;
+
 //            case 3:
 //                fragment = new MyFollowingFragment();
 //                break;
