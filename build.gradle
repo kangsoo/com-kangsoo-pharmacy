@@ -3,9 +3,6 @@ buildscript {
     repositories {
         jcenter()
         mavenCentral()
-//        maven {
-//            url "https://github.com/dahlgren/vpi-aar/raw/master"
-//        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.2.2'
