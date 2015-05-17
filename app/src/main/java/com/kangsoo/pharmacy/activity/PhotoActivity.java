@@ -41,7 +41,8 @@ import uk.co.senab.photoview.PhotoViewAttacher;
  */
 public class PhotoActivity extends Fragment implements View.OnClickListener {
 
-    CameraFragmentListener cameraFragmentListener;
+    private CameraFragmentListener cameraFragmentListener;
+    private PhotoViewAttacher mAttacher;
 
     private static final String MIME_TYPE = "image/jpeg";
     private Uri uri;
@@ -53,6 +54,7 @@ public class PhotoActivity extends Fragment implements View.OnClickListener {
 
     private User mUser;
     private final String DESCRIBABLE_KEY = "com.kangsoo.MESSAGE";
+    private ImageView photoView;
 
 
     @Override
@@ -84,7 +86,7 @@ public class PhotoActivity extends Fragment implements View.OnClickListener {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        ImageView photoView = (ImageView) getActivity().findViewById(R.id.photo);
+        photoView = (ImageView) getActivity().findViewById(R.id.photo);
         if(uri == null){
             photoView.setImageResource(R.drawable.ic_action_camera);
         }else{
@@ -94,11 +96,13 @@ public class PhotoActivity extends Fragment implements View.OnClickListener {
         _topBarIcon = (ImageView) getActivity().findViewById(R.id.top_bar_icon);
         _topBarIcon.setOnClickListener(this);
 
-        // The MAGIC happens here!
-        PhotoViewAttacher mAttacher = new PhotoViewAttacher(photoView);
+//        // The MAGIC happens here!
+//        if(mAttacher == null){
+//            mAttacher = new PhotoViewAttacher(photoView);
+//        }
+////        PhotoViewAttacher mAttacher = new PhotoViewAttacher(photoView);
 
     }
-
 
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -189,5 +193,21 @@ public class PhotoActivity extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         PhotoActivity.this._animateTopBarIcon();
         cameraFragmentListener.onTakePicture();
+    }
+
+    public void onPreview(File pFile){
+
+        if(pFile != null){
+            uri = Uri.fromFile(pFile);
+        }
+        if(uri == null){
+            photoView.setImageResource(R.drawable.ic_action_camera);
+        }else{
+            photoView.setImageURI(uri);
+        }
+
+        if(mAttacher == null){
+            mAttacher = new PhotoViewAttacher(photoView);
+        }
     }
 }

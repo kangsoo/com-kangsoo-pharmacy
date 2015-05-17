@@ -1,6 +1,7 @@
 package com.kangsoo.pharmacy.fragment;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -101,8 +102,12 @@ public abstract class TabPagerFragment<V extends PagerAdapter & FragmentProvider
      * @param position
      */
     protected void setCurrentItem(final int position) {
-
-        // Intentionally left blank
+        new Handler().post(new Runnable() {
+            @Override
+            public void run() {
+                pager.setCurrentItem(position);
+            }
+        });
     }
 
     /**

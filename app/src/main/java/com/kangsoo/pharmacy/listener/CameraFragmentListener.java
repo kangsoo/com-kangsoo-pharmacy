@@ -4,6 +4,8 @@ import android.graphics.Bitmap;
 
 import com.kangsoo.pharmacy.fragment.CameraFragment;
 
+import java.io.File;
+
 /**
  * Listener interface that has to be implemented by activities using
  * {@link CameraFragment} instances.
@@ -27,5 +29,10 @@ public interface CameraFragmentListener {
      * Take a Picture
      */
     public void onTakePicture();
+
+    /**
+     * After Take a Picture, go to PreviewPage
+     */
+    public void onMovetoPhotoPreview(File pFile);
 
 }

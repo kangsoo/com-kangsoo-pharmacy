@@ -83,18 +83,18 @@ public class CameraActivity extends Fragment implements View.OnClickListener {
         transaction.replace(R.id.camera_fragment, childFragment).commit();
     }
 
-    // Embeds the child fragment dynamically
-    private void replaceNestedFragment(File pFile) {
-
-        Fragment photoActivity = new PhotoActivity();
-
-        Bundle args = new Bundle();
-        args.putSerializable("file", pFile);
-        photoActivity.setArguments(args);
-
+//    // Embeds the child fragment dynamically
+//    private void replaceNestedFragment(File pFile) {
+//
+//        Fragment photoActivity = new PhotoActivity();
+//
+//        Bundle args = new Bundle();
+//        args.putSerializable("file", pFile);
+//        photoActivity.setArguments(args);
+//
 //        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-//        transaction.replace(R.id.camera_fragment, photoActivity).commit();
-    }
+//        transaction.replace(R.layout.activity_camera, photoActivity).commit();
+//    }
 
     /**
      * A picture has been taken.
@@ -153,7 +153,9 @@ public class CameraActivity extends Fragment implements View.OnClickListener {
 */
 
         //Uri.fromFile(mediaFile)
-        replaceNestedFragment(mediaFile);
+//        replaceNestedFragment(mediaFile);
+
+        cameraFragmentListener.onMovetoPhotoPreview(mediaFile);
 
 //        getActivity().finish();
     }

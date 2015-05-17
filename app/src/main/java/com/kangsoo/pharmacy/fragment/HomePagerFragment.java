@@ -46,7 +46,14 @@ public class HomePagerFragment extends TabPagerFragment<HomePagerAdapter> {
 
     public void setPagePosition(int position){
 
-        homePagerAdapter.getItem(position);
+        homePagerAdapter.getItemPosition(2);
+//        this.getCurrentItem(position);
+//        homePagerAdapter.getItem(position);
 //        this.onPageSelected(position);
+    }
+
+    @Override
+    public void setCurrentItem(int position) {
+        super.setCurrentItem(position);
     }
 }

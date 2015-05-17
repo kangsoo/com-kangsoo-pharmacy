@@ -24,6 +24,7 @@ import com.kangsoo.pharmacy.fragment.UserLoader;
 import com.kangsoo.pharmacy.listener.CameraFragmentListener;
 import com.kangsoo.pharmacy.model.User;
 
+import java.io.File;
 import java.util.Collections;
 import java.util.List;
 
@@ -54,6 +55,8 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
+
+//        onNavigationDrawerItemSelected(0);
     }
 
     @Override
@@ -68,12 +71,6 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
         return super.onCreateOptionsMenu(optionMenu);
     }
 
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-    }
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
@@ -193,7 +190,8 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
         cameraActivity.onPictureTaken(bitmap);
 
         HomePagerFragment homePagerFragment = getVisibleHomePagerFragment();
-        homePagerFragment.setPagePosition(1);
+        homePagerFragment.setCurrentItem(1);
+//        homePagerFragment.setPagePosition(2);
 
         //kskim to-do list
         Toast.makeText(MainActivity.this, "사진촬영이 정상적으로 완료되었습니다.", Toast.LENGTH_SHORT).show();
@@ -213,6 +211,14 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
 
         //kskim to-do list
         Toast.makeText(MainActivity.this, "사진촬영 시작", Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    public void onMovetoPhotoPreview(File pFile) {
+
+        PhotoActivity photoActivity = getVisiblePhotoActivityFragment();
+        photoActivity.onPreview(pFile);
 
     }
 
@@ -267,6 +273,28 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
                             if (child_fragment instanceof CameraActivity) {
                                 return (CameraActivity) child_fragment;
                             }
+                        }
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public PhotoActivity getVisiblePhotoActivityFragment() {
+
+        FragmentManager fragmentManager = MainActivity.this.getSupportFragmentManager();
+        List<Fragment> fragments = fragmentManager.getFragments();
+        for (Fragment fragment : fragments) {
+            if (fragment != null && fragment.getUserVisibleHint()) {
+
+                if (fragment instanceof HomePagerFragment) {
+
+                    List<Fragment> child_fragments = fragment.getChildFragmentManager().getFragments();
+
+                    for (Fragment child_fragment : child_fragments) {
+                        if (child_fragment instanceof PhotoActivity) {
+                            return (PhotoActivity) child_fragment;
                         }
                     }
                 }
