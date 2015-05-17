@@ -1,1 +1,2 @@
 include ':app', ':pagerslidingtabstrip-library'
+include ":library"

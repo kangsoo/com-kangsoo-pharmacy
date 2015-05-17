@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/com-kangsoo-pharmacy.iml" filepath="$PROJECT_DIR$/com-kangsoo-pharmacy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/pagerslidingtabstrip-library/pagerslidingtabstrip-library.iml" filepath="$PROJECT_DIR$/pagerslidingtabstrip-library/pagerslidingtabstrip-library.iml" />
     </modules>
   </component>

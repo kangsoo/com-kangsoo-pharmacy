@@ -74,7 +74,7 @@ public class PhotoActivity extends Fragment implements View.OnClickListener {
 
         File file;
         file = (File) getArguments().getSerializable("file");
-        if(file != null){
+        if (file != null) {
             uri = Uri.fromFile(file);
         }
 
@@ -87,9 +87,9 @@ public class PhotoActivity extends Fragment implements View.OnClickListener {
         super.onActivityCreated(savedInstanceState);
 
         photoView = (ImageView) getActivity().findViewById(R.id.photo);
-        if(uri == null){
+        if (uri == null) {
             photoView.setImageResource(R.drawable.ic_action_camera);
-        }else{
+        } else {
             photoView.setImageURI(uri);
         }
 
@@ -97,7 +97,7 @@ public class PhotoActivity extends Fragment implements View.OnClickListener {
         _topBarIcon.setOnClickListener(this);
 
 //        // The MAGIC happens here!
-//        if(mAttacher == null){
+//        if (mAttacher == null) {
 //            mAttacher = new PhotoViewAttacher(photoView);
 //        }
 ////        PhotoViewAttacher mAttacher = new PhotoViewAttacher(photoView);
@@ -128,18 +128,15 @@ public class PhotoActivity extends Fragment implements View.OnClickListener {
                 initializeShareAction(item);
                 return true;
 
-            case R.id.sendPhoto:
-                sendPhotoToServer(item);
-
             default:
                 return false;
         }
     }
 
-    private void sendPhotoToServer(MenuItem item) {
+    private void sendPhotoToServer() {
 
         //wifi를 사용하겠다고 하면...
-        if (SettingsUtil.getUsingwifi().toString().equals("false")) {
+        if (SettingsUtil.getUsingwifi().equals("false")) {
             wifiManager = (WifiManager) getActivity().getSystemService(Context.WIFI_SERVICE);
             if (wifiManager.isWifiEnabled()) {
                 wifiManager.setWifiEnabled(false);
@@ -153,13 +150,11 @@ public class PhotoActivity extends Fragment implements View.OnClickListener {
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-            item.setEnabled(true);
         } catch (IOException e) {
             e.printStackTrace();
-            item.setEnabled(true);
-        } finally {
-            item.setEnabled(false);
         }
+
+//        _topBarIcon.setEnabled(false);
     }
 
     private void initializeShareAction(MenuItem shareItem) {
@@ -191,23 +186,26 @@ public class PhotoActivity extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+
         PhotoActivity.this._animateTopBarIcon();
-        cameraFragmentListener.onTakePicture();
+        //cameraFragmentListener.onTakePicture();
+        sendPhotoToServer();
+
     }
 
-    public void onPreview(File pFile){
+    public void onPreview(File pFile) {
 
-        if(pFile != null){
+        if (pFile != null) {
             uri = Uri.fromFile(pFile);
         }
-        if(uri == null){
+        if (uri == null) {
             photoView.setImageResource(R.drawable.ic_action_camera);
-        }else{
+        } else {
             photoView.setImageURI(uri);
         }
 
-        if(mAttacher == null){
-            mAttacher = new PhotoViewAttacher(photoView);
-        }
+//        if(mAttacher == null){
+//            mAttacher = new PhotoViewAttacher(photoView);
+//        }
     }
 }
