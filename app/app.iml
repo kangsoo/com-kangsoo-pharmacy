@@ -135,8 +135,8 @@
     <orderEntry type="library" exported="" name="cglib-2.2.1-v20090111" level="project" />
     <orderEntry type="library" exported="" name="play-services-wallet-7.0.0" level="project" />
     <orderEntry type="library" exported="" name="roboguice-2.0" level="project" />
-    <orderEntry type="library" exported="" name="liferay-push-notifications-portlet-android-sdk-6.2.0.4" level="project" />
     <orderEntry type="library" exported="" name="liferay-android-sdk-6.2.0.14" level="project" />
+    <orderEntry type="library" exported="" name="liferay-push-notifications-portlet-android-sdk-6.2.0.4" level="project" />
     <orderEntry type="library" exported="" name="play-services-maps-7.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-appindexing-7.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-cast-7.0.0" level="project" />
@@ -163,7 +163,7 @@
     <orderEntry type="library" exported="" name="play-services-appstate-7.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-identity-7.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-games-7.0.0" level="project" />
+    <orderEntry type="module" module-name="viewpagerindicator-library" exported="" />
     <orderEntry type="module" module-name="pagerslidingtabstrip-library" exported="" />
-    <orderEntry type="module" module-name="library" exported="" />
   </component>
 </module>

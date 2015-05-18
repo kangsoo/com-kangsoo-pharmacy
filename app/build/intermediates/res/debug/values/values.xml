@@ -8,7 +8,7 @@
         <item>\uf07d</item>
         <item>\uf07b</item>
     </string-array>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="boolean" name="centered"/>
     <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
@@ -64,14 +64,14 @@
         <enum name="end" value="2"/>
     </attr>
     <attr format="color" name="md_widget_color"/>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="color" name="selectedColor"/>
     <attr format="dimension" name="strokeWidth"/>
     <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="color" name="unselectedColor"/>
     <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
@@ -83,7 +83,7 @@
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <bool name="default_circle_indicator_centered">true</bool>
     <bool name="default_circle_indicator_snap">false</bool>
@@ -147,7 +147,7 @@
     <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
     <color name="common_signin_btn_light_text_focused">#FF737373</color>
     <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
     <color name="default_circle_indicator_page_color">#00000000</color>
@@ -221,7 +221,7 @@
     <color name="tab_text">#999999</color>
     <color name="top_bar_background">#FBD22A</color>
     <color name="top_bar_background_center">#FFD12B</color>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="vpi__background_holo_dark">#ff000000</color>
     <color name="vpi__background_holo_light">#fff3f3f3</color>
@@ -352,7 +352,7 @@
     <eat-comment/>
     <dimen name="activity_horizontal_margin">8dp</dimen>
     <dimen name="activity_vertical_margin">8dp</dimen>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="default_circle_indicator_radius">3dp</dimen>
     <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
@@ -362,7 +362,7 @@
     <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="default_margin">6dp</dimen>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="default_title_indicator_clip_padding">4dp</dimen>
     <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
@@ -442,7 +442,7 @@
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <integer name="default_circle_indicator_orientation">0</integer>
     <integer name="default_title_indicator_footer_indicator_style">2</integer>
@@ -1867,7 +1867,7 @@ available. Please contact the developer for assistance.</string>
     </style>
     <style name="TextAppearance.AppCompat.Widget.Switch" parent="Base.TextAppearance.AppCompat.Widget.Switch"/>
     <style name="TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.TabPageIndicator" parent="Widget">
         <item name="android:textStyle">bold</item>
@@ -1931,7 +1931,7 @@ available. Please contact the developer for assistance.</string>
     <item name="android:windowIsFloating">true</item>
     <item name="android:backgroundDimEnabled">false</item>
   </style>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
         <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
@@ -1984,7 +1984,7 @@ available. Please contact the developer for assistance.</string>
         <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
         <item name="maskedWalletDetailsLogoImageType">classic</item>
     </style>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget">
     </style>
@@ -2081,7 +2081,7 @@ available. Please contact the developer for assistance.</string>
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.IconPageIndicator" parent="Widget">
         <item name="android:layout_marginLeft">6dp</item>
@@ -2095,7 +2095,7 @@ available. Please contact the developer for assistance.</string>
         <item name="indeterminateProgressStyle">@style/IndeterminateProgress</item>
         <item name="android:indeterminateProgressStyle">@style/IndeterminateProgress</item>
     </style>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.TabPageIndicator" parent="Widget">
         <item name="android:gravity">center</item>

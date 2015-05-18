@@ -38,12 +38,12 @@ dependencies {
     compile 'com.liferay.mobile:liferay-push-notifications-portlet-android-sdk:6.2.0.4'
     compile 'com.liferay.mobile:liferay-android-sdk:6.2.0.14'
     compile 'com.android.support:support-v4:22.1.1'
-    compile 'com.google.android.gms:play-services:7.0.0'
+    compile 'com.google.android.gms:play-services:7.3.0'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
     compile 'com.intellij:annotations:12.0'
     compile 'com.github.chrisbanes.photoview:library:1.2.3'
     compile project(':pagerslidingtabstrip-library')
-    compile project(':library')
+    compile project(':viewpagerindicator-library')
     compile 'com.android.support:appcompat-v7:22.1.1'
     compile 'com.squareup.picasso:picasso:2.5.0'
     compile 'com.squareup.okhttp:okhttp:2.3.0'

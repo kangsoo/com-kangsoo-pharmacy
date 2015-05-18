@@ -426,7 +426,7 @@ MERGED from com.github.chrisbanes.photoview:library:1.2.3:2:5
 MERGED from com.android.support:support-v4:22.1.1:20:5
 MERGED from com-kangsoo-pharmacy:pagerslidingtabstrip-library:unspecified:5:5
 MERGED from com.android.support:support-v4:22.1.1:20:5
-MERGED from com-kangsoo-pharmacy:library:unspecified:7:5
+MERGED from com-kangsoo-pharmacy:viewpagerindicator-library:unspecified:7:5
 MERGED from com.android.support:support-v4:22.1.1:20:5
 MERGED from com.android.support:appcompat-v7:22.1.1:20:5
 MERGED from com.android.support:support-v4:22.1.1:20:5
