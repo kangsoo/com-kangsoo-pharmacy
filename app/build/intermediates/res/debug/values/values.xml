@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/typeface.xml -->
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/typeface.xml -->
     <eat-comment/>
     <string-array name="navigation_drawer_icon_list">
         <item>\uf08d</item>
@@ -8,43 +8,73 @@
         <item>\uf07d</item>
         <item>\uf07b</item>
     </string-array>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="boolean" name="centered"/>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.6.3.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.4.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="color" name="md_background_color"/>
     <attr format="reference" name="md_btn_negative_selector"/>
     <attr format="reference" name="md_btn_neutral_selector"/>
     <attr format="reference" name="md_btn_positive_selector"/>
     <attr format="reference" name="md_btn_stacked_selector"/>
+    <attr format="enum" name="md_btnstacked_gravity">
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
+    </attr>
+    <attr format="enum" name="md_buttons_gravity">
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
+    </attr>
     <attr format="color" name="md_content_color"/>
+    <attr format="enum" name="md_content_gravity">
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
+    </attr>
     <attr format="boolean" name="md_dark_theme"/>
     <attr format="color" name="md_divider"/>
     <attr format="color" name="md_divider_color"/>
     <attr format="reference" name="md_icon"/>
+    <attr format="boolean" name="md_icon_limit_icon_to_default_size"/>
+    <attr format="dimension" name="md_icon_max_size"/>
     <attr format="color" name="md_item_color"/>
+    <attr format="enum" name="md_items_gravity">
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
+    </attr>
     <attr format="reference" name="md_list_selector"/>
+    <attr format="string" name="md_medium_font"/>
     <attr format="color" name="md_negative_color"/>
     <attr format="color" name="md_neutral_color"/>
     <attr format="color" name="md_positive_color"/>
+    <attr format="string" name="md_regular_font"/>
     <attr format="color" name="md_title_color"/>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <attr format="enum" name="md_title_gravity">
+        <enum name="start" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="end" value="2"/>
+    </attr>
+    <attr format="color" name="md_widget_color"/>
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="color" name="selectedColor"/>
     <attr format="dimension" name="strokeWidth"/>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="color" name="unselectedColor"/>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
@@ -53,46 +83,46 @@
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <bool name="default_circle_indicator_centered">true</bool>
     <bool name="default_circle_indicator_snap">false</bool>
     <bool name="default_line_indicator_centered">true</bool>
     <bool name="default_title_indicator_selected_bold">true</bool>
     <bool name="default_underline_indicator_fades">true</bool>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="accent">#3797C7</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="actionbar_background">#33AA49</color>
     <color name="background">#F9F9F9</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="background_floating_material_dark">#ff424242</color>
     <color name="background_floating_material_light">#ffeeeeee</color>
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="background_selected">#E8E8E8</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/pagerslidingtabstrip-library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/pagerslidingtabstrip-library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="background_tab_pressed">#6633B5E5</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="black">#000000</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -102,10 +132,10 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="camera_preview_background">#000000</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values/common_colors.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values/common_colors.xml -->
     <eat-comment/>
     <color name="common_action_bar_splitter">#d2d2d2</color>
     <color name="common_signin_btn_dark_text_default">@android:color/white</color>
@@ -117,7 +147,7 @@
     <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
     <color name="common_signin_btn_light_text_focused">#FF737373</color>
     <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
     <color name="default_circle_indicator_page_color">#00000000</color>
@@ -128,16 +158,16 @@
     <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
     <color name="default_title_indicator_text_color">#BBFFFFFF</color>
     <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="grey">#A3A3A3</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -150,17 +180,20 @@
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.6.3.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.4.1/res/values/values.xml -->
     <eat-comment/>
+    <color name="md_btn_selected">#33969696</color>
+    <color name="md_btn_selected_dark">#40CBCBCB</color>
     <color name="md_divider_black">#10000000</color>
     <color name="md_divider_white">#10FFFFFF</color>
+    <color name="md_edittext_error">#DD2C00</color>
     <color name="md_material_blue_600">#1E88E5</color>
     <color name="md_material_blue_800">#1565C0</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="primary">#3D3D3D</color>
     <color name="primary_dark">#313131</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff757575</color>
@@ -180,7 +213,7 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="tab_icon">#FAFAFA</color>
     <color name="tab_selected_icon">#08D7FF</color>
@@ -188,7 +221,7 @@
     <color name="tab_text">#999999</color>
     <color name="top_bar_background">#FBD22A</color>
     <color name="top_bar_background_center">#FFD12B</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="vpi__background_holo_dark">#ff000000</color>
     <color name="vpi__background_holo_light">#fff3f3f3</color>
@@ -198,7 +231,7 @@
     <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
     <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
     <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/res/values/wallet_colors.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/res/values/wallet_colors.xml -->
     <eat-comment/>
     <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
     <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
@@ -232,6 +265,7 @@
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
     <declare-styleable name="LoadingImageView"><attr format="enum" name="imageAspectRatioAdjust"><enum name="none" value="0"/><enum name="adjust_width" value="1"/><enum name="adjust_height" value="2"/></attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
+    <declare-styleable name="MDRootLayout"><attr format="boolean" name="md_reduce_padding_no_title_no_buttons"/></declare-styleable>
     <declare-styleable name="MapAttrs"><attr format="enum" name="mapType"><enum name="none" value="0"/><enum name="normal" value="1"/><enum name="satellite" value="2"/><enum name="terrain" value="3"/><enum name="hybrid" value="4"/></attr><attr format="float" name="cameraBearing"/><attr format="float" name="cameraTargetLat"/><attr format="float" name="cameraTargetLng"/><attr format="float" name="cameraTilt"/><attr format="float" name="cameraZoom"/><attr format="boolean" name="liteMode"/><attr format="boolean" name="uiCompass"/><attr format="boolean" name="uiRotateGestures"/><attr format="boolean" name="uiScrollGestures"/><attr format="boolean" name="uiTiltGestures"/><attr format="boolean" name="uiZoomControls"/><attr format="boolean" name="uiZoomGestures"/><attr format="boolean" name="useViewLifecycle"/><attr format="boolean" name="zOrderOnTop"/><attr format="boolean" name="uiMapToolbar"/></declare-styleable>
     <declare-styleable name="MenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="showAsAction"><flag name="never" value="0"/><flag name="ifRoom" value="1"/><flag name="always" value="2"/><flag name="withText" value="4"/><flag name="collapseActionView" value="8"/></attr><attr format="reference" name="actionLayout"/><attr format="string" name="actionViewClass"/><attr format="string" name="actionProviderClass"/></declare-styleable>
@@ -252,7 +286,7 @@
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
     <declare-styleable name="WalletFragmentOptions"><attr format="enum" name="appTheme"><enum name="holo_dark" value="0"/><enum name="holo_light" value="1"/></attr><attr format="enum" name="environment"><enum name="production" value="1"/><enum name="sandbox" value="0"/><enum name="strict_sandbox" value="2"/></attr><attr format="reference" name="fragmentStyle"/><attr format="enum" name="fragmentMode"><enum name="buyButton" value="1"/><enum name="selectionDetails" value="2"/></attr></declare-styleable>
     <declare-styleable name="WalletFragmentStyle"><attr format="dimension" name="buyButtonHeight"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="dimension" name="buyButtonWidth"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="enum" name="buyButtonText"><enum name="buy_with_google" value="1"/><enum name="buy_now" value="2"/><enum name="book_now" value="3"/><enum name="donate_with_google" value="4"/></attr><attr format="enum" name="buyButtonAppearance"><enum name="classic" value="1"/><enum name="grayscale" value="2"/><enum name="monochrome" value="3"/></attr><attr format="reference" name="maskedWalletDetailsTextAppearance"/><attr format="reference" name="maskedWalletDetailsHeaderTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsBackground"/><attr format="reference" name="maskedWalletDetailsButtonTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsButtonBackground"/><attr format="color" name="maskedWalletDetailsLogoTextColor"/><attr format="enum" name="maskedWalletDetailsLogoImageType"><enum name="classic" value="1"/><enum name="monochrome" value="2"/></attr></declare-styleable>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -314,21 +348,21 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">8dp</dimen>
     <dimen name="activity_vertical_margin">8dp</dimen>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="default_circle_indicator_radius">3dp</dimen>
     <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
     <dimen name="default_line_indicator_gap_width">4dp</dimen>
     <dimen name="default_line_indicator_line_width">12dp</dimen>
     <dimen name="default_line_indicator_stroke_width">1dp</dimen>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="default_margin">6dp</dimen>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="default_title_indicator_clip_padding">4dp</dimen>
     <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
@@ -338,7 +372,7 @@
     <dimen name="default_title_indicator_text_size">15dp</dimen>
     <dimen name="default_title_indicator_title_padding">5dp</dimen>
     <dimen name="default_title_indicator_top_padding">7dp</dimen>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -346,49 +380,55 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.6.3.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.4.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="md_action_corner_radius">2dp</dimen>
+    <dimen name="md_bg_corner_radius">2dp</dimen>
     <dimen name="md_button_frame_vertical_padding">8dp</dimen>
     <dimen name="md_button_height">48dp</dimen>
     <dimen name="md_button_inset_horizontal">4dp</dimen>
     <dimen name="md_button_inset_vertical">6dp</dimen>
-    <dimen name="md_button_min_width">42dp</dimen>
+    <dimen name="md_button_min_width">72dp</dimen>
     <dimen name="md_button_padding_frame_side">12dp</dimen>
     <dimen name="md_button_padding_horizontal">8dp</dimen>
     <dimen name="md_button_padding_horizontal_internalexternal">32dp</dimen>
     <dimen name="md_button_padding_vertical">4dp</dimen>
     <dimen name="md_button_textpadding_horizontal">1dp</dimen>
     <dimen name="md_button_textsize">14sp</dimen>
-    <dimen name="md_content_textsize">18sp</dimen>
-    <dimen name="md_content_vertical_padding">8dp</dimen>
+    <dimen name="md_content_padding_bottom">8dp</dimen>
+    <dimen name="md_content_padding_top">8dp</dimen>
+    <dimen name="md_content_textsize">16sp</dimen>
     <dimen name="md_dialog_frame_margin">24dp</dimen>
+    <dimen name="md_divider_height">1dp</dimen>
     <dimen name="md_icon_margin">16dp</dimen>
-    <dimen name="md_listitem_control_margin">16dp</dimen>
-    <dimen name="md_listitem_height">52dp</dimen>
+    <dimen name="md_icon_max_size">48dp</dimen>
+    <dimen name="md_listitem_control_margin">6dp</dimen>
+    <dimen name="md_listitem_height">48dp</dimen>
     <dimen name="md_listitem_margin_left">24dp</dimen>
-    <dimen name="md_listitem_textsize">18sp</dimen>
+    <dimen name="md_listitem_textsize">16sp</dimen>
     <dimen name="md_neutral_button_margin">12dp</dimen>
-    <dimen name="md_progressdialog_paddingwithtitle">4dp</dimen>
-    <dimen name="md_title_frame_margin_bottom">16dp</dimen>
-    <dimen name="md_title_frame_margin_bottom_list">4dp</dimen>
+    <dimen name="md_notitle_vertical_padding">16dp</dimen>
+    <dimen name="md_simplelist_icon">40dp</dimen>
+    <dimen name="md_simplelist_icon_margin">16dp</dimen>
+    <dimen name="md_simplelistitem_padding_top">8dp</dimen>
+    <dimen name="md_title_frame_margin_bottom">12dp</dimen>
     <dimen name="md_title_textsize">20sp</dimen>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="nav_drawer_header_height">152dp</dimen>
     <dimen name="navigation_drawer_width">304dp</dimen>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <dimen name="plus_button_elevation">2.3dp</dimen>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="toolbar_top_padding">0dp</dimen>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <item format="float" name="top_bar_icon_animation_scale" type="dimen">1.06</item>
     <dimen name="top_bar_icon_margin_left">20dp</dimen>
     <dimen name="top_bar_icon_margin_top">20dp</dimen>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
@@ -402,20 +442,20 @@
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <integer name="default_circle_indicator_orientation">0</integer>
     <integer name="default_title_indicator_footer_indicator_style">2</integer>
     <integer name="default_title_indicator_line_position">0</integer>
     <integer name="default_underline_indicator_fade_delay">300</integer>
     <integer name="default_underline_indicator_fade_length">400</integer>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values/version.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values/version.xml -->
     <eat-comment/>
     <integer name="google_play_services_version">7095000</integer>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/integers.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/integers.xml -->
     <eat-comment/>
     <integer name="top_bar_icon_animation_duration">1500</integer>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -434,10 +474,10 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="accept">Accept</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="accept_profile">Accept Profile</string>
     <string name="access_control">Access Control</string>
@@ -459,7 +499,7 @@
     <string name="bluetooth_not_enabled">Bluetooth not enabled</string>
     <string name="bookmarks">즐겨찾기</string>
     <string name="cancel">Cancel</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values/common_strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values/common_strings.xml -->
     <eat-comment/>
     <string name="common_android_wear_notification_needs_update_text">An application requires an update to the Android Wear app.</string>
     <string name="common_android_wear_update_text">This app won\'t run unless you update the Android Wear app.</string>
@@ -493,22 +533,22 @@
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="commono_google_play_services_api_unavailable_text">This app requires one or more Google Play services that are not currently
 available. Please contact the developer for assistance.</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="configuration">Configuration</string>
     <string name="connect">Connect</string>
     <string name="content_description_take_picture">Take picture</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
     <string name="create_calendar_title">Create calendar event</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="credentials">Credentials</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="decline">Decline</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="device_information">Device Information</string>
     <string name="device_name">Device Name</string>
@@ -521,7 +561,7 @@ available. Please contact the developer for assistance.</string>
     <string name="generate">Generate</string>
     <string name="hardware_revision">Hardware Revision</string>
     <string name="home">Home</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/typeface.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/typeface.xml -->
     <eat-comment/>
     <string name="icon_comment">\uf04f</string>
     <string name="icon_file">\uf011</string>
@@ -531,7 +571,7 @@ available. Please contact the developer for assistance.</string>
     <string name="icon_pull_request">\uf20E</string>
     <string name="icon_star">\uf02a</string>
     <string name="icon_tag">\uf215</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="login">Login</string>
     <string name="major">Major</string>
@@ -568,11 +608,11 @@ available. Please contact the developer for assistance.</string>
     <string name="server">Server</string>
     <string name="set_password">Set password</string>
     <string name="settings">설정</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="submit">Submit</string>
     <string name="syncing_config">Syncing config…</string>
@@ -588,19 +628,19 @@ available. Please contact the developer for assistance.</string>
     <string name="unexpected_error_monitoring_start">Unexpected error occured during monitoring start</string>
     <string name="usingwifi">Wi-Fi</string>
     <string name="venue">Venue</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/res/values/wallet_strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="yes">Yes</string>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/MyActionBar</item>
@@ -621,7 +661,7 @@ available. Please contact the developer for assistance.</string>
         <item name="android:layout_width">40dp</item>
         <item name="android:layout_height">40dp</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1532,7 +1572,7 @@ available. Please contact the developer for assistance.</string>
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="DetailValue">
         <item name="android:layout_marginTop">5dip</item>
@@ -1545,19 +1585,19 @@ available. Please contact the developer for assistance.</string>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/theme.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/theme.xml -->
     <eat-comment/>
     <style name="IndeterminateProgress" parent="@android:style/Widget.ProgressBar">
         <item name="android:indeterminateDrawable">@drawable/actionbar_spinner</item>
         <item name="android:minWidth">16dp</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="ListSpinner" parent="Spinner">
         <item name="android:layout_width">64dp</item>
         <item name="android:layout_height">64dp</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.6.3.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.4.1/res/values/values.xml -->
     <eat-comment/>
     <style name="MD_ActionButton">
         <item name="android:layout_width">wrap_content</item>
@@ -1565,8 +1605,7 @@ available. Please contact the developer for assistance.</string>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:focusable">true</item>
     </style>
-    <style name="MD_ActionButton.Text">
-        <item name="android:textAllCaps">true</item>
+    <style name="MD_ActionButton.Text" ns1:ignore="NewApi">
         <item name="android:textSize">@dimen/md_button_textsize</item>
         <item name="android:singleLine">true</item>
         <item name="android:layout_gravity">center_vertical</item>
@@ -1576,9 +1615,8 @@ available. Please contact the developer for assistance.</string>
         <item name="android:minWidth">@dimen/md_button_min_width</item>
         <item name="android:paddingLeft">@dimen/md_button_textpadding_horizontal</item>
         <item name="android:paddingRight">@dimen/md_button_textpadding_horizontal</item>
-        <item name="android:duplicateParentState">true</item>
     </style>
-    <style name="MD_ActionButtonStacked" parent="@style/MD_ActionButton">
+    <style name="MD_ActionButtonStacked" ns1:ignore="NewApi" parent="@style/MD_ActionButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:paddingLeft">@dimen/md_button_padding_horizontal_internalexternal</item>
         <item name="android:paddingStart">@dimen/md_button_padding_horizontal_internalexternal
@@ -1587,32 +1625,38 @@ available. Please contact the developer for assistance.</string>
         </item>
         <item name="android:paddingEnd">@dimen/md_button_padding_horizontal_internalexternal</item>
     </style>
-    <style name="MD_Dark" parent="android:Theme.Dialog">
+    <style name="MD_Dark" parent="Theme.AppCompat.Dialog.Alert">
         <item name="md_divider">@color/md_divider_white</item>
-        <item name="md_list_selector">@drawable/md_selector</item>
-        <item name="md_btn_stacked_selector">@drawable/md_selector</item>
+        <item name="md_list_selector">@drawable/md_selector_dark</item>
+        <item name="md_btn_stacked_selector">@drawable/md_selector_dark</item>
         <item name="md_btn_positive_selector">@drawable/md_btn_selector_dark</item>
         <item name="md_btn_neutral_selector">@drawable/md_btn_selector_dark</item>
         <item name="md_btn_negative_selector">@drawable/md_btn_selector_dark</item>
 
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/MD_WindowAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
     </style>
-    <style name="MD_Light" parent="Theme_Light_Dialog">
+    <style name="MD_Light" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="md_divider">@color/md_divider_black</item>
         <item name="md_list_selector">@drawable/md_selector</item>
         <item name="md_btn_stacked_selector">@drawable/md_selector</item>
         <item name="md_btn_positive_selector">@drawable/md_btn_selector</item>
         <item name="md_btn_neutral_selector">@drawable/md_btn_selector</item>
         <item name="md_btn_negative_selector">@drawable/md_btn_selector</item>
+
+        <item name="android:windowAnimationStyle">@style/MD_WindowAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/styles.xml -->
+    <style name="MD_WindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/actionbar_background</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1750,7 +1794,7 @@ available. Please contact the developer for assistance.</string>
     <style name="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation">
         <item name="android:paddingLeft">@dimen/abc_action_bar_navigation_padding_start_material</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="Spinner">
         <item name="android:indeterminate">true</item>
@@ -1765,7 +1809,7 @@ available. Please contact the developer for assistance.</string>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">16dp</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
@@ -1823,13 +1867,13 @@ available. Please contact the developer for assistance.</string>
     </style>
     <style name="TextAppearance.AppCompat.Widget.Switch" parent="Base.TextAppearance.AppCompat.Widget.Switch"/>
     <style name="TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.TabPageIndicator" parent="Widget">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/vpi__dark_theme</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item">
     </style>
@@ -1859,7 +1903,7 @@ available. Please contact the developer for assistance.</string>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/theme.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/theme.xml -->
     <eat-comment/>
     <style name="Theme.GitHub" parent="@style/Theme.AppCompat.NoActionBar">
 
@@ -1877,7 +1921,7 @@ available. Please contact the developer for assistance.</string>
     <style name="Theme.GitHub.NavigationDrawer" parent="Theme.GitHub">
         <item name="colorControlHighlight">@color/ripple_material_light</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_iap_style.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_iap_style.xml -->
     <eat-comment/>
     <style name="Theme.IAPTheme" parent="android:Theme">
     <item name="android:windowIsTranslucent">true</item>
@@ -1887,35 +1931,26 @@ available. Please contact the developer for assistance.</string>
     <item name="android:windowIsFloating">true</item>
     <item name="android:backgroundDimEnabled">false</item>
   </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
         <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
         <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.6.3.1/res/values/values.xml -->
-    <eat-comment/>
-    <style name="Theme_Light_Dialog" parent="android:Theme.Light">
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
-    </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/theme.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/theme.xml -->
     <eat-comment/>
     <style name="ToolbarStyle">
         <item name="colorControlNormal">@android:color/white</item>
         <item name="colorControlHighlight">@color/ripple_material_dark</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/res/values/wallet_styles.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/res/values/wallet_styles.xml -->
     <eat-comment/>
     <style name="WalletFragmentDefaultButtonTextAppearance">
         <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
@@ -1949,11 +1984,11 @@ available. Please contact the developer for assistance.</string>
         <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
         <item name="maskedWalletDetailsLogoImageType">classic</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget">
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
@@ -2046,13 +2081,13 @@ available. Please contact the developer for assistance.</string>
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.IconPageIndicator" parent="Widget">
         <item name="android:layout_marginLeft">6dp</item>
         <item name="android:layout_marginRight">6dp</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/theme.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/theme.xml -->
     <eat-comment/>
     <style name="Widget.Styled.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
         <item name="background">@drawable/actionbar_background</item>
@@ -2060,7 +2095,7 @@ available. Please contact the developer for assistance.</string>
         <item name="indeterminateProgressStyle">@style/IndeterminateProgress</item>
         <item name="android:indeterminateProgressStyle">@style/IndeterminateProgress</item>
     </style>
-    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.TabPageIndicator" parent="Widget">
         <item name="android:gravity">center</item>

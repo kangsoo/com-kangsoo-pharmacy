@@ -1,2 +1,1 @@
-include ':app', ':pagerslidingtabstrip-library'
-include ":library"
+include ":library", ':app', "pagerslidingtabstrip-library"

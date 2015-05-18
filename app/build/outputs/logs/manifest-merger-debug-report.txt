@@ -1,8 +1,6 @@
 -- Merging decision tree log ---
 manifest
 ADDED from AndroidManifest.xml:1:1
-	xmlns:android
-		ADDED from AndroidManifest.xml:1:11
 	package
 		ADDED from AndroidManifest.xml:2:5
 		INJECTED from AndroidManifest.xml:0:0
@@ -10,6 +8,8 @@ ADDED from AndroidManifest.xml:1:1
 	android:versionName
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:1:11
 uses-feature#android.hardware.camera2
 ADDED from AndroidManifest.xml:4:5
 	android:required
@@ -126,12 +126,12 @@ supports-screens
 ADDED from AndroidManifest.xml:39:5
 	android:largeScreens
 		ADDED from AndroidManifest.xml:40:9
+	android:smallScreens
+		ADDED from AndroidManifest.xml:42:9
 	android:normalScreens
 		ADDED from AndroidManifest.xml:41:9
 	android:xlargeScreens
 		ADDED from AndroidManifest.xml:43:9
-	android:smallScreens
-		ADDED from AndroidManifest.xml:42:9
 application
 ADDED from AndroidManifest.xml:45:5
 MERGED from com.android.support:support-v4:22.1.1:22:5
@@ -220,26 +220,29 @@ MERGED from com.android.support:support-v4:22.1.1:22:5
 MERGED from com.android.support:support-v4:22.1.1:22:5
 MERGED from com.android.support:appcompat-v7:22.1.1:22:5
 MERGED from com.android.support:support-v4:22.1.1:22:5
-MERGED from com.afollestad:material-dialogs:0.6.3.1:12:5
+MERGED from com.afollestad:material-dialogs:0.7.4.1:12:5
+MERGED from com.android.support:support-v4:22.1.1:22:5
 MERGED from com.android.support:appcompat-v7:22.1.1:22:5
 MERGED from com.android.support:support-v4:22.1.1:22:5
+MERGED from com.android.support:recyclerview-v7:22.1.1:22:5
+MERGED from com.android.support:support-v4:22.1.1:22:5
 MERGED from com.jakewharton.hugo:hugo-runtime:1.2.1:9:5
-	android:allowBackup
-		ADDED from com.github.chrisbanes.photoview:library:1.2.3:4:18
 	android:label
 		ADDED from AndroidManifest.xml:47:9
-	android:icon
-		ADDED from AndroidManifest.xml:46:9
 	android:hardwareAccelerated
 		ADDED from com.github.chrisbanes.photoview:library:1.2.3:4:45
+	android:icon
+		ADDED from AndroidManifest.xml:46:9
+	android:allowBackup
+		ADDED from com.github.chrisbanes.photoview:library:1.2.3:4:18
 	android:theme
 		ADDED from AndroidManifest.xml:48:9
 meta-data#kontakt.io.API_KEY
 ADDED from AndroidManifest.xml:50:9
-	android:name
-		ADDED from AndroidManifest.xml:50:20
 	android:value
 		ADDED from AndroidManifest.xml:50:54
+	android:name
+		ADDED from AndroidManifest.xml:50:20
 activity#com.kangsoo.pharmacy.activity.MainActivity
 ADDED from AndroidManifest.xml:52:9
 	android:screenOrientation
@@ -260,18 +263,18 @@ ADDED from AndroidManifest.xml:58:17
 		ADDED from AndroidManifest.xml:58:27
 activity#com.kangsoo.pharmacy.activity.DetailsActivity
 ADDED from AndroidManifest.xml:65:9
-	android:uiOptions
-		ADDED from AndroidManifest.xml:68:13
 	android:configChanges
 		ADDED from AndroidManifest.xml:67:13
+	android:uiOptions
+		ADDED from AndroidManifest.xml:68:13
 	android:name
 		ADDED from AndroidManifest.xml:66:13
 activity#com.kangsoo.pharmacy.activity.SettingsActivity
 ADDED from AndroidManifest.xml:70:9
-	android:uiOptions
-		ADDED from AndroidManifest.xml:73:13
 	android:configChanges
 		ADDED from AndroidManifest.xml:72:13
+	android:uiOptions
+		ADDED from AndroidManifest.xml:73:13
 	android:name
 		ADDED from AndroidManifest.xml:71:13
 activity#com.kangsoo.pharmacy.ui.activity.BeaconMonitorActivity
@@ -427,8 +430,11 @@ MERGED from com-kangsoo-pharmacy:library:unspecified:7:5
 MERGED from com.android.support:support-v4:22.1.1:20:5
 MERGED from com.android.support:appcompat-v7:22.1.1:20:5
 MERGED from com.android.support:support-v4:22.1.1:20:5
-MERGED from com.afollestad:material-dialogs:0.6.3.1:8:5
+MERGED from com.afollestad:material-dialogs:0.7.4.1:8:5
+MERGED from com.android.support:support-v4:22.1.1:20:5
 MERGED from com.android.support:appcompat-v7:22.1.1:20:5
+MERGED from com.android.support:support-v4:22.1.1:20:5
+MERGED from com.android.support:recyclerview-v7:22.1.1:20:5
 MERGED from com.android.support:support-v4:22.1.1:20:5
 MERGED from com.jakewharton.hugo:hugo-runtime:1.2.1:7:5
 	android:targetSdkVersion
@@ -464,7 +470,13 @@ MERGED from com.google.android.gms:play-services-base:7.0.0:21:9
 MERGED from com.google.android.gms:play-services-base:7.0.0:21:9
 MERGED from com.google.android.gms:play-services-base:7.0.0:21:9
 MERGED from com.google.android.gms:play-services-base:7.0.0:21:9
-	android:name
-		ADDED from com.google.android.gms:play-services-base:7.0.0:22:13
 	android:value
 		ADDED from com.google.android.gms:play-services-base:7.0.0:23:13
+	android:name
+		ADDED from com.google.android.gms:play-services-base:7.0.0:22:13
+activity#android.support.v7.widget.TestActivity
+ADDED from com.android.support:recyclerview-v7:22.1.1:23:9
+	android:label
+		ADDED from com.android.support:recyclerview-v7:22.1.1:25:13
+	android:name
+		ADDED from com.android.support:recyclerview-v7:22.1.1:24:13

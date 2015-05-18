@@ -7,4 +7,4 @@
 	<objectAnimator
 		android:propertyName="scaleY"
 		android:valueTo="@dimen/top_bar_icon_animation_scale" />
-</set><!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/animator/top_bar_icon_scale.xml -->
+</set><!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/animator/top_bar_icon_scale.xml -->
