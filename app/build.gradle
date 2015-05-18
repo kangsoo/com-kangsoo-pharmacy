@@ -1,14 +1,15 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 apply plugin: 'com.android.application'
-apply plugin: 'com.jakewharton.hugo'
+//apply plugin: 'com.jakewharton.hugo'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
     defaultConfig {
+        multiDexEnabled true
         applicationId "com.kangsoo.pharmacy"
-        minSdkVersion 18
-        targetSdkVersion 22
+        minSdkVersion Integer.parseInt(ANDROID_BUILD_MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
         versionName 'Initialize'
     }
 
@@ -34,7 +35,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:multidex:'
     compile 'com.liferay.mobile:liferay-push-notifications-portlet-android-sdk:6.2.0.4'
     compile 'com.liferay.mobile:liferay-android-sdk:6.2.0.14'
     compile 'com.android.support:support-v4:22.1.1'
@@ -42,8 +44,12 @@ dependencies {
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
     compile 'com.intellij:annotations:12.0'
     compile 'com.github.chrisbanes.photoview:library:1.2.3'
-    compile project(':pagerslidingtabstrip-library')
-    compile project(':viewpagerindicator-library')
+    compile (project(':pagerslidingtabstrip-library')){
+        exclude group: "com.android.support" , module: 'support-v4'
+    }
+    compile (project(':viewpagerindicator-library')){
+        exclude group: "com.android.support" , module: 'support-v4'
+    }
     compile 'com.android.support:appcompat-v7:22.1.1'
     compile 'com.squareup.picasso:picasso:2.5.0'
     compile 'com.squareup.okhttp:okhttp:2.3.0'

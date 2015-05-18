@@ -1,1 +1,1 @@
-include ":viewpagerindicator-library", "pagerslidingtabstrip-library", ':app'
+include ':app', ":viewpagerindicator-library", "pagerslidingtabstrip-library"

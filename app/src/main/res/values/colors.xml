@@ -19,4 +19,14 @@
 
     <color name="black">#000000</color>
     <color name="grey">#A3A3A3</color>
+
+    <color name="pager_title_background_top_start">#1A4D6B</color>
+    <color name="pager_title_background_top_end">#1A5373</color>
+    <color name="pager_title_background_bottom">#155A7F</color>
+    <color name="pager_title_background_end">#22688F</color>
+    <color name="pager_title_background_start">#1F5D82</color>
+    <color name="pager_title_text">#E0E6EA</color>
+    <color name="pager_title_selected_text">#FFFFFF</color>
+    <color name="text_link">#4183C4</color>
+
 </resources>

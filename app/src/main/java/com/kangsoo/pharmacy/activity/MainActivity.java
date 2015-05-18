@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.multidex.MultiDex;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.MenuItemCompat;
@@ -42,6 +43,13 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
     private NavigationDrawerAdapter navigationAdapter;
     public static User org;
     private boolean exitConfirmation = false;
+
+    //Error RunTime - Java
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

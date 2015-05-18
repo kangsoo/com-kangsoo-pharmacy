@@ -100,4 +100,19 @@
     <string name="response_status">HttpResponse status: %1$d</string>
     <string name="configuration">Configuration</string>
 
+    <!-- Empty messages -->
+    <string name="no_bookmarks">No Bookmarks</string>
+    <string name="no_repositories">No Repositories</string>
+    <string name="no_contributors">No contributors</string>
+    <string name="no_issues">No Issues</string>
+    <string name="no_gists">No Gists</string>
+    <string name="no_people">No People</string>
+    <string name="no_followers">No Followers</string>
+    <string name="no_members">No Members</string>
+    <string name="no_news">No News</string>
+    <string name="no_commits">No Commits</string>
+    <!--  -->
+
+    <string name="error_bookmarks_load">Loading bookmarks failed</string>
+
 </resources>

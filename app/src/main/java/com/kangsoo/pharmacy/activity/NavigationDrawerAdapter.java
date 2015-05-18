@@ -1,6 +1,7 @@
 package com.kangsoo.pharmacy.activity;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -118,8 +119,8 @@ public class NavigationDrawerAdapter extends BaseAdapter {
 
         switch (obj.getType()) {
             case TYPE_ITEM_MENU:
-//                Typeface font = Typeface.createFromAsset(context.getAssets(), "octicons.ttf");
-//                viewHolder.iconString.setTypeface(font);
+                Typeface font = Typeface.createFromAsset(context.getAssets(), "octicons.ttf");
+                viewHolder.iconString.setTypeface(font);
                 viewHolder.iconString.setText(obj.getIconString());
                 viewHolder.name.setText(obj.getTitle());
                 break;
