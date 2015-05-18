@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values-v21/values.xml -->
+    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values-v21/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>
@@ -218,7 +218,7 @@
     <style name="Base.Widget.AppCompat.TextView.SpinnerItem" parent="android:Widget.Material.TextView.SpinnerItem"/>
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget.Material.Toolbar.Button.Navigation">
     </style>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.4.1/res/values-v21/values-v21.xml -->
+    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.4.1/res/values-v21/values-v21.xml -->
     <eat-comment/>
     <style name="MD_Dark" parent="Theme.AppCompat.Dialog.Alert">
         <item name="android:windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
@@ -242,7 +242,7 @@
         <item name="md_btn_neutral_selector">@drawable/md_btn_selector_ripple</item>
         <item name="md_btn_negative_selector">@drawable/md_btn_selector_ripple</item>
     </style>
-    <!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values-v21/values.xml -->
+    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values-v21/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme.Material">
         <item name="android:windowNoTitle">true</item>

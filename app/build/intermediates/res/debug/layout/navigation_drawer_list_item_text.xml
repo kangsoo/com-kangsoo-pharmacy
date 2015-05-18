@@ -26,4 +26,4 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:layout_centerVertical="true" />
 
-</com.kangsoo.pharmacy.fragment.CheckableRelativeLayout><!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/layout/navigation_drawer_list_item_text.xml -->
+</com.kangsoo.pharmacy.fragment.CheckableRelativeLayout><!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/layout/navigation_drawer_list_item_text.xml -->

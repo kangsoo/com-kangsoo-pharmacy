@@ -8,4 +8,4 @@
 		android:endColor="@color/top_bar_background"
 		android:startColor="@color/top_bar_background"
 		android:type="linear" />
-</shape><!-- From: file:/C:/Dev/androidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/drawable-hdpi/top_bar_background.xml -->
+</shape><!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/drawable-hdpi/top_bar_background.xml -->
