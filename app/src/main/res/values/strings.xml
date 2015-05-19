@@ -114,5 +114,7 @@
     <!--  -->
 
     <string name="error_bookmarks_load">Loading bookmarks failed</string>
+    <string name="avatar">Avatar</string>
+    <string name="assigned">is assigned</string>
 
 </resources>

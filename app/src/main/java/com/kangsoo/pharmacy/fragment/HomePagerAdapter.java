@@ -23,6 +23,7 @@ import android.view.ViewGroup;
 
 import com.kangsoo.pharmacy.R;
 import com.kangsoo.pharmacy.activity.CameraActivity;
+import com.kangsoo.pharmacy.activity.FilterListFragment;
 import com.kangsoo.pharmacy.activity.PhotoActivity;
 import com.kangsoo.pharmacy.model.User;
 import com.kangsoo.pharmacy.ui.activity.BeaconRangeActivity;
@@ -72,9 +73,10 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
                 fragment = new BeaconRangeActivity();
                 break;
 
-//            case 3:
-//                fragment = new MyFollowingFragment();
-//                break;
+            case 3:
+                fragment = new FilterListFragment();
+                break;
+
 //            default:
 //                fragment = new CameraFragment();
 //                fragment = new CameraActivity();

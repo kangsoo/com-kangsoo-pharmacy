@@ -29,4 +29,9 @@
     <color name="pager_title_selected_text">#FFFFFF</color>
     <color name="text_link">#4183C4</color>
 
+    <color name="text">#1E1E1E</color>
+    <color name="text_light">#AEAEAE</color>
+    <color name="list_divider_top">#E2E2E2</color>
+    <color name="list_divider_bottom">#FFFFFF</color>
+
 </resources>

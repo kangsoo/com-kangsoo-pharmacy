@@ -81,4 +81,41 @@
         <item name="android:padding">16dp</item>
     </style>
 
+    <style name="TitleText">
+        <item name="android:textSize">17sp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="ListTitleText" parent="TitleText"></style>
+
+    <style name="ListSubtitleText" parent="SubtitleText"></style>
+
+    <style name="SubtitleText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="ListView">
+        <item name="android:dividerHeight">2dp</item>
+        <item name="android:divider">@drawable/list_divider</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+
+    <style name="ListItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/list_item_background</item>
+    </style>
+
 </resources>

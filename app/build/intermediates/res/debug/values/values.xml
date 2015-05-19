@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="http://schemas.android.com/tools">
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/typeface.xml -->
     <eat-comment/>
     <string-array name="navigation_drawer_icon_list">
@@ -175,6 +175,12 @@
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
+    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="list_divider_bottom">#FFFFFF</color>
+    <color name="list_divider_top">#E2E2E2</color>
+    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <eat-comment/>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -191,6 +197,13 @@
     <color name="md_material_blue_800">#1565C0</color>
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <color name="pager_title_background_bottom">#155A7F</color>
+    <color name="pager_title_background_end">#22688F</color>
+    <color name="pager_title_background_start">#1F5D82</color>
+    <color name="pager_title_background_top_end">#1A5373</color>
+    <color name="pager_title_background_top_start">#1A4D6B</color>
+    <color name="pager_title_selected_text">#FFFFFF</color>
+    <color name="pager_title_text">#E0E6EA</color>
     <color name="primary">#3D3D3D</color>
     <color name="primary_dark">#313131</color>
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
@@ -219,6 +232,9 @@
     <color name="tab_selected_icon">#08D7FF</color>
     <color name="tab_selected_text">#FFFFFF</color>
     <color name="tab_text">#999999</color>
+    <color name="text">#1E1E1E</color>
+    <color name="text_light">#AEAEAE</color>
+    <color name="text_link">#4183C4</color>
     <color name="top_bar_background">#FBD22A</color>
     <color name="top_bar_background_center">#FFD12B</color>
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com-kangsoo-pharmacy/viewpagerindicator-library/unspecified/res/values/values.xml -->
@@ -490,6 +506,8 @@
     <string name="app_name">김강수 사진촬영</string>
     <string name="appeared_beacon_info">Device found:\n%1$s\nProximityUUID:\n%2$s\nMajor:\n%3$d\nMinor:\n%4$d\nDistance:\n%5$.1f m (%6$s)</string>
     <string name="apply_config">Apply Configuration</string>
+    <string name="assigned">is assigned</string>
+    <string name="avatar">Avatar</string>
     <string name="background_scan">Background Scan</string>
     <string name="battery">Battery</string>
     <string name="battery_level">Battery Level</string>
@@ -553,6 +571,7 @@ available. Please contact the developer for assistance.</string>
     <string name="device_information">Device Information</string>
     <string name="device_name">Device Name</string>
     <string name="email">Email</string>
+    <string name="error_bookmarks_load">Loading bookmarks failed</string>
     <string name="find_repositories">Find Repositories</string>
     <string name="firmware_revision">Firmware Revision</string>
     <string name="firmware_version">Firmware version</string>
@@ -584,6 +603,16 @@ available. Please contact the developer for assistance.</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_subheader">Subheader</string>
     <string name="no">No</string>
+    <string name="no_bookmarks">No Bookmarks</string>
+    <string name="no_commits">No Commits</string>
+    <string name="no_contributors">No contributors</string>
+    <string name="no_followers">No Followers</string>
+    <string name="no_gists">No Gists</string>
+    <string name="no_issues">No Issues</string>
+    <string name="no_members">No Members</string>
+    <string name="no_news">No News</string>
+    <string name="no_people">No People</string>
+    <string name="no_repositories">No Repositories</string>
     <string name="ok">Ok</string>
     <string name="order">상품조회</string>
     <string name="password">Password</string>
@@ -1593,9 +1622,26 @@ available. Please contact the developer for assistance.</string>
     </style>
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/styles.xml -->
     <eat-comment/>
+    <style name="ListItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/list_item_background</item>
+    </style>
     <style name="ListSpinner" parent="Spinner">
         <item name="android:layout_width">64dp</item>
         <item name="android:layout_height">64dp</item>
+    </style>
+    <style name="ListSubtitleText" parent="SubtitleText"/>
+    <style name="ListTitleText" parent="TitleText"/>
+    <style name="ListView">
+        <item name="android:dividerHeight">2dp</item>
+        <item name="android:divider">@drawable/list_divider</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:fadingEdge">none</item>
     </style>
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.7.4.1/res/values/values.xml -->
     <eat-comment/>
@@ -1802,6 +1848,12 @@ available. Please contact the developer for assistance.</string>
         <item name="android:indeterminateDuration">2000</item>
         <item name="android:indeterminateOnly">true</item>
     </style>
+    <style name="SubtitleText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
     <style name="TabText" parent="Global">
         <item name="android:textColor">@color/tab_text_colors</item>
         <item name="android:textSize">12sp</item>
@@ -1944,6 +1996,16 @@ available. Please contact the developer for assistance.</string>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
+    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="TitleText">
+        <item name="android:textSize">17sp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/theme.xml -->
     <eat-comment/>
     <style name="ToolbarStyle">

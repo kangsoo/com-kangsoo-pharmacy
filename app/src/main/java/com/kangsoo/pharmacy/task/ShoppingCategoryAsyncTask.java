@@ -26,7 +26,7 @@ public class ShoppingCategoryAsyncTask extends AsyncTask<Void, Void, ArrayList<S
     }
 
     @Override
-    protected ArrayList<ShoppingCategory> doInBackground(Void... params) {
+    public ArrayList<ShoppingCategory> doInBackground(Void... params) {
 
         ArrayList<ShoppingCategory> shoppingCategories = new ArrayList<ShoppingCategory>();
 

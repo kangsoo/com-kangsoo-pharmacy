@@ -16,20 +16,12 @@
 package com.kangsoo.pharmacy.activity;
 
 import android.view.LayoutInflater;
-import android.widget.TextView;
 
-import com.google.android.gms.games.quest.Milestone;
 import com.kangsoo.pharmacy.R;
 import com.kangsoo.pharmacy.model.ShoppingCategory;
-import com.kangsoo.pharmacy.model.User;
 import com.kangsoo.pharmacy.util.AvatarLoader;
 
-import org.objectweb.asm.Label;
-
-import java.util.Collection;
-
 import wishlist.SingleTypeAdapter;
-import wishlist.ViewUtils;
 
 /**
  * Adapter to display a list of {@link ShoppingCategory} objects
@@ -60,33 +52,34 @@ public class FilterListAdapter extends SingleTypeAdapter<ShoppingCategory> {
     }
 
     @Override
-    protected void update(int position, ShoppingCategory filter) {
-        avatars.bind(imageView(0), filter.getRepository().getOwner());
-        setText(1, filter.getRepository().generateId());
-        if (filter.isOpen())
-            setText(2, R.string.open_issues);
-        else
-            setText(2, R.string.closed_issues);
+    protected void update(int position, ShoppingCategory shoppingcategory) {
 
-        Collection<Label> labels = filter.getLabels();
-        if (labels != null && !labels.isEmpty()) {
-            TextView labelsText = textView(3);
-            LabelDrawableSpan.setText(labelsText, labels);
-            ViewUtils.setGone(labelsText, false);
-        } else
-            setGone(3, true);
+        //kskim to-do
+//        avatars.bind(imageView(0), shoppingcategory.getRepository().getOwner());
 
-        Milestone milestone = filter.getMilestone();
-        if (milestone != null)
-            ViewUtils.setGone(setText(4, milestone.getTitle()), false);
-        else
-            setGone(4, true);
+        setText(1, shoppingcategory.get_name());
+        setText(2, shoppingcategory.get_description());
+        setText(3, shoppingcategory.get_userName());
 
-        User assignee = filter.getAssignee();
-        if (assignee != null) {
-            avatars.bind(imageView(7), assignee);
-            ViewUtils.setGone(setText(6, assignee.getLogin()), false);
-        } else
-            setGone(5, true);
+//        Collection<Label> labels = shoppingcategory.getLabels();
+//        if (labels != null && !labels.isEmpty()) {
+//            TextView labelsText = textView(3);
+//            LabelDrawableSpan.setText(labelsText, labels);
+//            ViewUtils.setGone(labelsText, false);
+//        } else
+//            setGone(3, true);
+
+//        Milestone milestone = shoppingcategory.getMilestone();
+//        if (milestone != null)
+//            ViewUtils.setGone(setText(4, milestone.getTitle()), false);
+//        else
+//            setGone(4, true);
+
+//        User assignee = shoppingcategory.getAssignee();
+//        if (assignee != null) {
+//            avatars.bind(imageView(7), assignee);
+//            ViewUtils.setGone(setText(6, assignee.getLogin()), false);
+//        } else
+//            setGone(5, true);
     }
 }

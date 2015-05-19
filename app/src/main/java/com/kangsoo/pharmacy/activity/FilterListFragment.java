@@ -5,21 +5,19 @@ import android.support.v4.content.Loader;
 import android.view.View;
 import android.widget.ListView;
 
-import wishlist.AsyncLoader;
-import wishlist.SingleTypeAdapter;
-
-import com.kangsoo.pharmacy.R;
-import com.kangsoo.pharmacy.activity.ItemListFragment;
-import com.kangsoo.pharmacy.util.AvatarLoader;
 import com.google.inject.Inject;
+import com.kangsoo.pharmacy.R;
 import com.kangsoo.pharmacy.model.ShoppingCategory;
+import com.kangsoo.pharmacy.task.ShoppingCategoryAsyncTask;
+import com.kangsoo.pharmacy.util.AvatarLoader;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import static java.lang.String.CASE_INSENSITIVE_ORDER;
+import wishlist.AsyncLoader;
+import wishlist.SingleTypeAdapter;
 
 /**
  * Fragment to display a list of {@link ShoppingCategory} objects
@@ -43,8 +41,10 @@ public class FilterListFragment extends ItemListFragment<ShoppingCategory> imple
 
             @Override
             public List<ShoppingCategory> loadInBackground() {
-                List<ShoppingCategory> filters = new ArrayList<ShoppingCategory>(
-                        cache.getIssueFilters());
+
+                ShoppingCategoryAsyncTask cache = new ShoppingCategoryAsyncTask(getContext());
+
+                List<ShoppingCategory> filters = new ArrayList<ShoppingCategory>(cache.doInBackground());
                 Collections.sort(filters, FilterListFragment.this);
                 return filters;
             }
@@ -61,7 +61,6 @@ public class FilterListFragment extends ItemListFragment<ShoppingCategory> imple
     @Override
     public void onResume() {
         super.onResume();
-
         refresh();
     }
 
