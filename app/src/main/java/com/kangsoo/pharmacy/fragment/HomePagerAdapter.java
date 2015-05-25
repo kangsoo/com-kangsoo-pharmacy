@@ -23,8 +23,9 @@ import android.view.ViewGroup;
 
 import com.kangsoo.pharmacy.R;
 import com.kangsoo.pharmacy.activity.CameraActivity;
-import com.kangsoo.pharmacy.activity.FilterListFragment;
 import com.kangsoo.pharmacy.activity.PhotoActivity;
+import com.kangsoo.pharmacy.activity.ShoppingCategoryListFragment;
+import com.kangsoo.pharmacy.activity.ShoppingItemListFragment;
 import com.kangsoo.pharmacy.model.User;
 import com.kangsoo.pharmacy.ui.activity.BeaconRangeActivity;
 
@@ -62,9 +63,7 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
             case 0:
                 fragment = new CameraActivity();
                 break;
-//                Bundle bundle = new Bundle();
-//                bundle.putSerializable(DESCRIBABLE_KEY, this.org);
-//                fragment.setArguments(bundle);
+
             case 1:
                 fragment = new PhotoActivity();
                 break;
@@ -74,13 +73,12 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
                 break;
 
             case 3:
-                fragment = new FilterListFragment();
+                fragment = new ShoppingCategoryListFragment();
                 break;
 
-//            default:
-//                fragment = new CameraFragment();
-//                fragment = new CameraActivity();
-//                break;
+            case 4:
+                fragment = new ShoppingItemListFragment();
+                break;
         }
 
         if (fragment != null) {
@@ -105,7 +103,7 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return defaultUser ? 4 : 3;
+        return 5;
     }
 
     @Override
@@ -119,6 +117,8 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
                 return resources.getString(R.string.tab_drugInfo);
             case 3:
                 return resources.getString(R.string.tab_orderHistory);
+            case 4:
+                return resources.getString(R.string.tab_orderItem);
             default:
                 return null;
         }

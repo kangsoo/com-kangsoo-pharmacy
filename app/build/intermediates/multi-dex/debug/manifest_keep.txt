@@ -1,0 +1,25 @@
+-keep class null {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class com.kangsoo.pharmacy.activity.MainActivity { <init>(); }
+-keep class com.kangsoo.pharmacy.activity.DetailsActivity { <init>(); }
+-keep class com.kangsoo.pharmacy.activity.SettingsActivity { <init>(); }
+-keep class com.kangsoo.pharmacy.ui.activity.BeaconMonitorActivity { <init>(); }
+-keep class com.kangsoo.pharmacy.ui.activity.BeaconManagementActivity { <init>(); }
+-keep class com.kangsoo.pharmacy.ui.activity.BackgroundScanActivity { <init>(); }
+-keep class com.kangsoo.pharmacy.ui.activity.ProfilesActivity { <init>(); }
+-keep class com.kangsoo.pharmacy.ui.activity.ConfigFormActivity { <init>(); }
+-keep class com.kangsoo.pharmacy.service.BackgroundScanService { <init>(); }
+-keep class com.kangsoo.pharmacy.service.SyncService { <init>(); }
+-keep class com.kontakt.sdk.android.manager.BeaconService { <init>(); }
+-keep class com.kontakt.sdk.android.manager.BeaconServiceL { <init>(); }
+-keep class com.kontakt.sdk.android.manager.ActionService { <init>(); }
+-keep class com.kangsoo.pharmacy.receiver.BackgroundScanReceiver { <init>(); }
+-keep class android.support.v7.widget.TestActivity { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}

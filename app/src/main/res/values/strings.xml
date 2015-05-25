@@ -116,5 +116,13 @@
     <string name="error_bookmarks_load">Loading bookmarks failed</string>
     <string name="avatar">Avatar</string>
     <string name="assigned">is assigned</string>
+    <string name="loading_issues">loading Shopping Items</string>
+    <string name="error_issues_load">loading Shopping Items Error</string>
+    <string name="bookmark">bookmark</string>
+    <string name="filter">Filter</string>
+    <string name="create">Create</string>
+    <string name="find_issues">find Issue</string>
+    <string name="refresh">refresh</string>
+    <string name="tab_orderItem">상세정보</string>
 
 </resources>

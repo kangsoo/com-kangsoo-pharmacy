@@ -3,6 +3,7 @@ package com.kangsoo.pharmacy.listener;
 import android.graphics.Bitmap;
 
 import com.kangsoo.pharmacy.fragment.CameraFragment;
+import com.kangsoo.pharmacy.model.ShoppingCategory;
 
 import java.io.File;
 
@@ -34,5 +35,10 @@ public interface CameraFragmentListener {
      * After Take a Picture, go to PreviewPage
      */
     public void onMovetoPhotoPreview(File pFile);
+
+    /**
+     * After Selected List Item, go to Display Shopping Item
+     */
+    public void onMovetoDisplayShoppingItem(ShoppingCategory shoppingCategory);
 
 }

@@ -23,6 +23,7 @@ import com.kangsoo.pharmacy.fragment.CameraFragment;
 import com.kangsoo.pharmacy.fragment.HomePagerFragment;
 import com.kangsoo.pharmacy.fragment.UserLoader;
 import com.kangsoo.pharmacy.listener.CameraFragmentListener;
+import com.kangsoo.pharmacy.model.ShoppingCategory;
 import com.kangsoo.pharmacy.model.User;
 
 import java.io.File;
@@ -230,6 +231,16 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
 
     }
 
+    @Override
+    public void onMovetoDisplayShoppingItem(ShoppingCategory shoppingCategory) {
+
+        HomePagerFragment homePagerFragment = getVisibleHomePagerFragment();
+        homePagerFragment.setCurrentItem(4);
+
+//        ShoppingItemListFragment shoppingItemListFragment = getVisibleShoppingItemFragment();
+
+    }
+
     public CameraFragment getVisibleCameraFragmentFragment() {
 
         FragmentManager fragmentManager = MainActivity.this.getSupportFragmentManager();
@@ -303,6 +314,28 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
                     for (Fragment child_fragment : child_fragments) {
                         if (child_fragment instanceof PhotoActivity) {
                             return (PhotoActivity) child_fragment;
+                        }
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public ShoppingItemListFragment getVisibleShoppingItemFragment() {
+
+        FragmentManager fragmentManager = MainActivity.this.getSupportFragmentManager();
+        List<Fragment> fragments = fragmentManager.getFragments();
+        for (Fragment fragment : fragments) {
+            if (fragment != null && fragment.getUserVisibleHint()) {
+
+                if (fragment instanceof HomePagerFragment) {
+
+                    List<Fragment> child_fragments = fragment.getChildFragmentManager().getFragments();
+
+                    for (Fragment child_fragment : child_fragments) {
+                        if (child_fragment instanceof ShoppingItemListFragment) {
+                            return (ShoppingItemListFragment) child_fragment;
                         }
                     }
                 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:ns1="http://schemas.android.com/tools">
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/typeface.xml -->
     <eat-comment/>
     <string-array name="navigation_drawer_icon_list">
@@ -173,6 +173,12 @@
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
+    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="label_inner">#55FFFFFF</color>
+    <color name="label_outer">#55000000</color>
+    <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <eat-comment/>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/colors.xml -->
@@ -515,6 +521,7 @@
     <string name="beacon_unique_id">Beacon Unique Id</string>
     <string name="birthday">Birthday</string>
     <string name="bluetooth_not_enabled">Bluetooth not enabled</string>
+    <string name="bookmark">bookmark</string>
     <string name="bookmarks">즐겨찾기</string>
     <string name="cancel">Cancel</string>
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/res/values/common_strings.xml -->
@@ -556,6 +563,7 @@ available. Please contact the developer for assistance.</string>
     <string name="configuration">Configuration</string>
     <string name="connect">Connect</string>
     <string name="content_description_take_picture">Take picture</string>
+    <string name="create">Create</string>
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.3.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
@@ -572,6 +580,9 @@ available. Please contact the developer for assistance.</string>
     <string name="device_name">Device Name</string>
     <string name="email">Email</string>
     <string name="error_bookmarks_load">Loading bookmarks failed</string>
+    <string name="error_issues_load">loading Shopping Items Error</string>
+    <string name="filter">Filter</string>
+    <string name="find_issues">find Issue</string>
     <string name="find_repositories">Find Repositories</string>
     <string name="firmware_revision">Firmware Revision</string>
     <string name="firmware_version">Firmware version</string>
@@ -592,6 +603,7 @@ available. Please contact the developer for assistance.</string>
     <string name="icon_tag">\uf215</string>
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="loading_issues">loading Shopping Items</string>
     <string name="login">Login</string>
     <string name="major">Major</string>
     <string name="manufacturer_name">Manufacturer Name</string>
@@ -624,6 +636,7 @@ available. Please contact the developer for assistance.</string>
     <string name="proximity">Proximity</string>
     <string name="proximity_uuid">Proximity UUID</string>
     <string name="range_beacons">Range beacons</string>
+    <string name="refresh">refresh</string>
     <string name="region_abandoned">%1$s abandoned</string>
     <string name="region_entered">%1$s entered</string>
     <string name="reset">Reset</string>
@@ -647,6 +660,7 @@ available. Please contact the developer for assistance.</string>
     <string name="syncing_config">Syncing config…</string>
     <string name="tab_drugInfo">비콘목록</string>
     <string name="tab_orderHistory">상품정보</string>
+    <string name="tab_orderItem">상세정보</string>
     <string name="tab_passHistory">미리보기</string>
     <string name="tab_takepicture">촬영</string>
     <string name="timers">Timers</string>
@@ -1614,6 +1628,7 @@ available. Please contact the developer for assistance.</string>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
     </style>
+    <style name="HeaderListItem" parent="ListItem"/>
     <!-- From: file:/D:/Dev/AndroidStudioProjects/com-kangsoo-pharmacy/app/src/main/res/values/theme.xml -->
     <eat-comment/>
     <style name="IndeterminateProgress" parent="@android:style/Widget.ProgressBar">
